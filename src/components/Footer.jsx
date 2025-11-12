@@ -117,11 +117,11 @@ const Footer = () => {
                 <span className="font-semibold text-[#E1BF5E]">Closed</span>
               </li>
             </ul>
-            <div className="mt-6 p-4 bg-white/10 rounded-lg border border-white/20">
+            {/* <div className="mt-6 p-4 bg-white/10 rounded-lg border border-white/20">
               <p className="text-sm text-white/90">
                 📞 Pre-order for special occasions
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -131,17 +131,6 @@ const Footer = () => {
             <p className="text-white/60 text-sm">
               &copy; {new Date().getFullYear()} D'modish Cakes. All rights reserved.
             </p>
-            <div className="flex gap-6">
-              <a href="#" className="text-white/60 hover:text-[#E1BF5E] text-sm transition-colors duration-300">
-                Privacy Policy
-              </a>
-              <a href="#" className="text-white/60 hover:text-[#E1BF5E] text-sm transition-colors duration-300">
-                Terms & Conditions
-              </a>
-              <a href="#" className="text-white/60 hover:text-[#E1BF5E] text-sm transition-colors duration-300">
-                Cookie Policy
-              </a>
-            </div>
           </div>
         </div>
       </div>

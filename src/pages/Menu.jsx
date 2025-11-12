@@ -6,6 +6,16 @@ import { GiCupcake, GiCakeSlice, GiPartyFlags, GiBread } from 'react-icons/gi';
 import { IoSparkles, IoTimeOutline, IoCheckmarkCircle } from 'react-icons/io5';
 import { MdLocalShipping, MdDesignServices } from 'react-icons/md';
 import { BiCustomize } from 'react-icons/bi';
+import celebrationCake from '../assets/images/products/cake-celebrationcake.jpg';
+import birthdayCake from '../assets/images/products/cake-birthdaycake.jpg';
+import cakeSlice from '../assets/images/products/cake-cakeslice.jpg';
+import expressCake from '../assets/images/products/cake-expresscake.jpg';
+import puffPuff from '../assets/images/products/fried-puffpuff.jpg';
+import meatPie from '../assets/images/products/fried-meatpie.jpeg';
+import puffPuffBox from '../assets/images/products/fried-puffpuffbox.jpg';
+import springRolls from '../assets/images/products/fried-puffpuffmix.jpg';
+import bananaBread from '../assets/images/products/baked-bananabread.jpg';
+import strawberryCakeSlice from '../assets/images/products/cake-strawberrybiscoffcakeslice.jpg';
 
 const Menu = () => {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -29,7 +39,7 @@ const Menu = () => {
         features: ["Custom Design", "Multiple Tiers", "Fresh Ingredients", "Serves 30-80+"],
         priceRange: "From £250",
         dietary: ["Vegan Option", "Gluten-Free Option"],
-        image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&q=80"
+        image: celebrationCake
       },
       {
         id: 2,
@@ -39,7 +49,7 @@ const Menu = () => {
         features: ["Theme Customization", "Age Display", "Photo Printing Available", "Serves 15-40"],
         priceRange: "From £80",
         dietary: ["Dairy-Free Option"],
-        image: "https://images.unsplash.com/photo-1558636508-e0db3814bd1d?w=800&q=80"
+        image: birthdayCake
       },
       {
         id: 3,
@@ -49,7 +59,7 @@ const Menu = () => {
         features: ["Multiple Flavors", "Perfect Single Serving", "Fresh Daily", "Ready to Eat"],
         priceRange: "£10 per slice",
         dietary: ["Various Options"],
-        image: "https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=800&q=80"
+        image: cakeSlice
       },
       {
         id: 4,
@@ -59,7 +69,7 @@ const Menu = () => {
         features: ["24-48hr Turnaround", "Simple Designs", "Premium Quality", "Serves 8-15"],
         priceRange: "From £45",
         dietary: ["Nut-Free Option"],
-        image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800&q=80"
+        image: expressCake
       }
     ],
     fingerFoods: [
@@ -71,7 +81,7 @@ const Menu = () => {
         features: ["Freshly Made Daily", "Traditional Recipe", "Party Favorite", "Various Pack Sizes"],
         priceRange: "From £5 per pack",
         servingSize: "Individual or party packs available",
-        image: "https://images.unsplash.com/photo-1600184893240-6c90f53d0588?w=800&q=80"
+        image: puffPuff
       },
       {
         id: 6,
@@ -81,7 +91,7 @@ const Menu = () => {
         features: ["Flaky Crust", "Savory Beef Filling", "Perfectly Spiced", "Individual or Bulk"],
         priceRange: "£3.50 each",
         servingSize: "Individual portions",
-        image: "https://images.unsplash.com/photo-1619873981210-77999c065e75?w=800&q=80"
+        image: meatPie
       },
       {
         id: 7,
@@ -91,7 +101,7 @@ const Menu = () => {
         features: ["Variety Selection", "Professionally Arranged", "Customizable Mix", "Serves 10-15"],
         priceRange: "£80 per platter",
         servingSize: "Serves 10-15 guests",
-        image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80"
+        image: puffPuffBox
       },
       {
         id: 8,
@@ -101,7 +111,7 @@ const Menu = () => {
         features: ["Crispy & Golden", "Perfectly Spiced", "Party Size Available", "Vegetarian Option"],
         priceRange: "£2.50 each",
         servingSize: "Minimum 10 pieces",
-        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800&q=80"
+        image: springRolls
       },
       {
         id: 9,
@@ -111,7 +121,7 @@ const Menu = () => {
         features: ["Beef or Veggie Options", "Perfectly Spiced", "Golden & Crispy", "Bulk Orders Available"],
         priceRange: "£2.50 each",
         servingSize: "Minimum 10 pieces",
-        image: "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=800&q=80"
+        image: meatPie
       }
     ],
     pastries: [
@@ -123,7 +133,7 @@ const Menu = () => {
         features: ["Freshly Baked Daily", "Moist & Flavorful", "Premium Ingredients", "Slice or Loaf"],
         priceRange: "From £8",
         dietary: ["Dairy-Free Option"],
-        image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&q=80"
+        image: bananaBread
       },
       {
         id: 11,
@@ -133,7 +143,7 @@ const Menu = () => {
         features: ["Fresh Strawberries", "Biscoff Flavor", "Individual Serving", "Fresh Daily"],
         priceRange: "£12 per slice",
         dietary: ["Vegetarian"],
-        image: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&q=80"
+        image: strawberryCakeSlice
       },
       {
         id: 12,
@@ -143,27 +153,27 @@ const Menu = () => {
         features: ["Multiple Flavors", "Beautiful Decoration", "Individual Portions", "Minimum 24 pieces"],
         priceRange: "From £25 per dozen",
         dietary: ["Vegan Available"],
-        image: "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=800&q=80"
+        image: cakeSlice
       },
       {
         id: 13,
         name: "Bread Buns",
         category: "pastries",
-        description: "Rich, fudgy brownies that melt in your mouth. Decadent chocolate in every bite.",
-        features: ["Fudgy Texture", "Premium Chocolate", "Cut to Size", "Minimum 12 pieces"],
-        priceRange: "£25 per dozen",
-        dietary: ["Gluten-Free Option"],
-        image: "https://images.unsplash.com/photo-1607920591413-4ec007e70023?w=800&q=80"
+        description: "Soft, fluffy Nigerian-style bread buns. Perfect for breakfast or as a sweet snack.",
+        features: ["Freshly Baked Daily", "Soft & Fluffy", "Traditional Recipe", "Pack of 6"],
+        priceRange: "From £6 per pack",
+        dietary: ["Dairy-Free Option"],
+        image: bananaBread
       },
       {
         id: 14,
-        name: "Fruit Tarts",
+        name: "Pastries Mix",
         category: "pastries",
-        description: "Elegant tarts with custard cream and fresh seasonal fruits. A sophisticated dessert option.",
-        features: ["Fresh Fruits", "Buttery Crust", "Beautiful Presentation", "Minimum 6 pieces"],
-        priceRange: "£4.50 each",
-        dietary: ["Contains Dairy"],
-        image: "https://images.unsplash.com/photo-1519915028121-7d3463d20b13?w=800&q=80"
+        description: "Assorted pastries and treats. A delightful mix of our freshly baked specialties.",
+        features: ["Variety Pack", "Fresh Daily", "Perfect for Sharing", "Minimum 6 pieces"],
+        priceRange: "From £20",
+        dietary: ["Various Options"],
+        image: puffPuffBox
       }
     ]
   };

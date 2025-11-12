@@ -5,6 +5,17 @@ import { FaHeart, FaStar, FaTimes, FaChevronLeft, FaChevronRight, FaInstagram, F
 import { GiCakeSlice, GiCupcake, GiBread, GiPartyFlags } from 'react-icons/gi';
 import { IoSparkles, IoClose } from 'react-icons/io5';
 import { MdEmail } from 'react-icons/md';
+import celebrationCake from '../assets/images/products/cake-celebrationcake.jpg';
+import celebrationCake2 from '../assets/images/products/cake-celebrationcake2.jpg';
+import birthdayCake from '../assets/images/products/cake-birthdaycake.jpg';
+import cakeSlice from '../assets/images/products/cake-cakeslice.jpg';
+import strawberryCakeSlice from '../assets/images/products/cake-strawberrybiscoffcakeslice.jpg';
+import expressCake from '../assets/images/products/cake-expresscake.jpg';
+import puffPuff from '../assets/images/products/fried-puffpuff.jpg';
+import puffPuffBox from '../assets/images/products/fried-puffpuffbox.jpg';
+import puffPuffMix from '../assets/images/products/fried-puffpuffmix.jpg';
+import meatPie from '../assets/images/products/fried-meatpie.jpeg';
+import bananaBread from '../assets/images/products/baked-bananabread.jpg';
 
 const Gallery = () => {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -27,137 +38,137 @@ const Gallery = () => {
     {
       id: 1,
       category: 'wedding',
-      image: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1200&q=80',
-      title: 'Elegant White Wedding Cake',
+      image: celebrationCake2,
+      title: 'Elegant Wedding Celebration Cake',
       occasion: 'Wedding Reception',
-      description: '5-tier white wedding cake with intricate fondant flowers and gold accents',
-      features: 'Fresh roses, Gold leaf, Vanilla & Raspberry filling'
+      description: 'Multi-tier celebration cake with elegant design and premium finishing',
+      features: 'Custom design, Premium ingredients, Fresh decoration'
     },
     {
       id: 2,
       category: 'birthday',
-      image: 'https://images.unsplash.com/photo-1558636508-e0db3814bd1d?w=1200&q=80',
-      title: 'Colorful Birthday Celebration',
-      occasion: '30th Birthday Party',
-      description: 'Vibrant multi-colored birthday cake with buttercream frosting',
-      features: 'Rainbow layers, Buttercream frosting, Custom topper'
+      image: birthdayCake,
+      title: 'Birthday Celebration Cake',
+      occasion: 'Birthday Party',
+      description: 'Custom birthday cake with vibrant colors and personalized design',
+      features: 'Theme customization, Fresh ingredients, Custom topper'
     },
     {
       id: 3,
       category: 'celebration',
-      image: 'https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=1200&q=80',
-      title: 'Anniversary Masterpiece',
-      occasion: '25th Anniversary',
-      description: 'Sophisticated silver anniversary cake with elegant design',
-      features: 'Silver accents, Red velvet, Cream cheese frosting'
+      image: celebrationCake,
+      title: 'Premium Celebration Cake',
+      occasion: 'Special Celebration',
+      description: 'Beautifully crafted celebration cake for any special occasion',
+      features: 'Premium finish, Multiple tiers, Custom design'
     },
     {
       id: 4,
-      category: 'wedding',
-      image: 'https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=1200&q=80',
-      title: 'Rustic Wedding Delight',
-      occasion: 'Outdoor Wedding',
-      description: 'Semi-naked cake with fresh berries and flowers',
-      features: 'Fresh berries, Edible flowers, Lemon & Elderflower'
+      category: 'celebration',
+      image: expressCake,
+      title: 'Express Celebration Cake',
+      occasion: 'Quick Order',
+      description: 'Beautiful cake with quick turnaround for last-minute celebrations',
+      features: 'Fast delivery, Simple elegance, Premium taste'
     },
     {
       id: 5,
       category: 'finger-foods',
-      image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1200&q=80',
+      image: puffPuffBox,
       title: 'Premium Small Chops Platter',
-      occasion: 'Corporate Event',
-      description: 'Assorted Nigerian finger foods beautifully arranged',
-      features: 'Puff puff, Samosas, Spring rolls, Meat pies'
+      occasion: 'Party Event',
+      description: 'Assorted Nigerian finger foods beautifully arranged in a box',
+      features: 'Puff puff, Spring rolls, Variety pack'
     },
     {
       id: 6,
       category: 'pastries',
-      image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1200&q=80',
-      title: 'Artisan Bread Buns',
+      image: bananaBread,
+      title: 'Artisan Banana Bread',
       occasion: 'Daily Fresh',
-      description: 'Freshly baked Nigerian-style bread buns',
-      features: 'Soft texture, Traditional recipe, Fresh daily'
+      description: 'Freshly baked banana bread, moist and flavorful',
+      features: 'Fresh daily, Premium ingredients, Traditional recipe'
     },
     {
       id: 7,
       category: 'birthday',
-      image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=1200&q=80',
-      title: 'Chocolate Indulgence',
-      occasion: 'Kids Birthday',
-      description: 'Rich chocolate cake with drip effect and decorations',
-      features: 'Chocolate ganache, Custom decorations, Triple chocolate'
+      image: cakeSlice,
+      title: 'Individual Cake Slice',
+      occasion: 'Everyday Treat',
+      description: 'Perfect single-serving cake slice for personal indulgence',
+      features: 'Multiple flavors, Fresh daily, Ready to eat'
     },
     {
       id: 8,
       category: 'celebration',
-      image: 'https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=1200&q=80',
-      title: 'Graduation Celebration',
-      occasion: 'Graduation Party',
-      description: 'Custom graduation-themed cake with school colors',
-      features: 'Fondant decorations, School colors, Personalized'
+      image: strawberryCakeSlice,
+      title: 'Strawberry Biscoff Slice',
+      occasion: 'Special Treat',
+      description: 'Indulgent cake slice with fresh strawberries and Biscoff',
+      features: 'Fresh strawberries, Biscoff flavor, Premium quality'
     },
     {
       id: 9,
       category: 'events',
-      image: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=1200&q=80',
-      title: 'Dessert Table Setup',
-      occasion: 'Wedding Reception',
-      description: 'Complete dessert display with multiple treats',
-      features: 'Coordinated theme, Multiple desserts, Professional setup'
+      image: puffPuffMix,
+      title: 'Party Finger Foods Mix',
+      occasion: 'Event Setup',
+      description: 'Assorted Nigerian finger foods perfectly arranged for events',
+      features: 'Variety selection, Party-ready, Professional presentation'
     },
     {
       id: 10,
       category: 'wedding',
-      image: 'https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=1200&q=80',
-      title: 'Modern Minimalist Wedding',
-      occasion: 'Contemporary Wedding',
-      description: 'Clean lines with geometric design and fresh florals',
-      features: 'Geometric design, Fresh flowers, Modern aesthetic'
+      image: celebrationCake2,
+      title: 'Luxury Wedding Cake',
+      occasion: 'Wedding Celebration',
+      description: 'Elegant multi-tier wedding cake with premium finish',
+      features: 'Multi-tier, Premium decoration, Custom design'
     },
     {
       id: 11,
       category: 'pastries',
-      image: 'https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=1200&q=80',
-      title: 'Mini Cupcake Collection',
-      occasion: 'Baby Shower',
-      description: 'Assorted mini cupcakes with various flavors',
-      features: 'Multiple flavors, Buttercream frosting, Party perfect'
+      image: bananaBread,
+      title: 'Fresh Baked Goods',
+      occasion: 'Daily Fresh',
+      description: 'Freshly baked pastries and bread made daily',
+      features: 'Fresh daily, Traditional recipes, Premium ingredients'
     },
     {
       id: 12,
       category: 'finger-foods',
-      image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?w=1200&q=80',
-      title: 'Golden Samosa Selection',
+      image: meatPie,
+      title: 'Nigerian Meat Pies',
       occasion: 'Party Catering',
-      description: 'Crispy samosas with beef and vegetable fillings',
-      features: 'Beef & veggie options, Perfectly spiced, Golden crispy'
+      description: 'Flaky pastry filled with savory seasoned beef',
+      features: 'Flaky crust, Savory filling, Perfectly spiced'
     },
     {
       id: 13,
       category: 'celebration',
-      image: 'https://images.unsplash.com/photo-1557925923-cd4648e211a0?w=1200&q=80',
-      title: 'Baby Shower Delight',
-      occasion: 'Baby Shower',
-      description: 'Pastel-themed cake with baby decorations',
-      features: 'Pastel colors, Baby theme, Vanilla & Strawberry'
+      image: expressCake,
+      title: 'Quick Celebration Cake',
+      occasion: 'Last-minute Order',
+      description: 'Beautiful cake with quick turnaround time',
+      features: 'Fast service, Simple elegance, Premium taste'
     },
     {
       id: 14,
       category: 'birthday',
-      image: 'https://images.unsplash.com/photo-1562440499-64c9a111f713?w=1200&q=80',
-      title: 'Princess Theme Birthday',
-      occasion: 'Kids Birthday',
-      description: 'Magical princess-themed cake with tiara',
-      features: 'Princess theme, Tiara topper, Pink & Purple'
+      image: birthdayCake,
+      title: 'Custom Birthday Cake',
+      occasion: 'Birthday Celebration',
+      description: 'Personalized birthday cake with custom theme',
+      features: 'Custom theme, Age display, Fresh ingredients'
     },
     {
       id: 15,
-      category: 'events',
-      image: 'https://images.unsplash.com/photo-1464195244916-405fa0a82545?w=1200&q=80',
-      title: 'Event Catering Display',
-      occasion: 'Corporate Event',
-      description: 'Professional catering setup with variety of treats',
-      features: 'Full service, Professional display, Custom branded'
+      category: 'finger-foods',
+      image: puffPuff,
+      title: 'Authentic Puff Puff',
+      occasion: 'Traditional Snack',
+      description: 'Sweet, fluffy Nigerian puff puff made fresh',
+      features: 'Traditional recipe, Freshly made, Party favorite'
     },
   ];
 

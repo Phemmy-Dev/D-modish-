@@ -7,7 +7,7 @@ import { IoSparkles, IoGlobe } from 'react-icons/io5';
 import { MdVerified, MdDinnerDining, MdLocalShipping } from 'react-icons/md';
 import heroImg from '../assets/images/heroimg.jpg';
 import celebrationCake from '../assets/images/products/cake-celebrationcake.jpg';
-import celebrationCake2 from '../assets/images/products/cake-celebrationcake2.jpg';
+import celebrationCake2 from '../assets/images/products/cake-childrenbirthdaycake.jpg';
 import birthdayCake from '../assets/images/products/cake-birthdaycake.jpg';
 import cakeSlice from '../assets/images/products/cake-cakeslice.jpg';
 import strawberryCakeSlice from '../assets/images/products/cake-strawberrybiscoffcakeslice.jpg';
@@ -35,7 +35,7 @@ const Homepage = () => {
     },
     { 
       id: 3, 
-      name: 'Premium Celebration Cake',
+      name: 'Special Birthday Cake',
       image: celebrationCake2
     },
     { 

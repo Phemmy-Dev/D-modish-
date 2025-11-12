@@ -5,6 +5,8 @@ import { FaHeart, FaStar, FaUsers, FaLeaf, FaTrophy, FaHandshake } from 'react-i
 import { GiCupcake, GiCakeSlice, GiPartyFlags } from 'react-icons/gi';
 import { IoSparkles } from 'react-icons/io5';
 import heroImg from '../assets/images/heroimg.jpg';
+import celebrationCake from '../assets/images/products/cake-celebrationcake.jpg';
+import puffPuffBox from '../assets/images/products/fried-puffpuffbox.jpg';
 
 const AboutUs = () => {
   return (
@@ -90,14 +92,11 @@ const AboutUs = () => {
               className="relative"
             >
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <div className="aspect-[4/5] bg-gradient-to-br from-[#E1BF5E]/10 to-[#1F1D63]/5 flex items-center justify-center border-2 border-dashed border-[#1F1D63]/20">
-                  <div className="text-center text-[#1F1D63] opacity-40">
-                    <svg className="w-20 h-20 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                    </svg>
-                    <p className="text-lg font-medium">Our Story Image</p>
-                  </div>
-                </div>
+                <img 
+                  src={celebrationCake} 
+                  alt="D'modish Celebration Cake"
+                  className="w-full h-full object-cover aspect-[4/5]"
+                />
                 <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[#E1BF5E] rounded-full opacity-20 blur-3xl"></div>
                 <div className="absolute -top-6 -left-6 w-32 h-32 bg-[#1F1D63] rounded-full opacity-20 blur-3xl"></div>
               </div>
@@ -545,11 +544,12 @@ const AboutUs = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <div className="aspect-square bg-gradient-to-br from-[#E1BF5E]/10 to-[#1F1D63]/5 rounded-3xl flex items-center justify-center border-2 border-dashed border-[#1F1D63]/20">
-                <div className="text-center text-[#1F1D63] opacity-40">
-                  <FaLeaf className="text-6xl mx-auto mb-4" />
-                  <p className="text-lg font-medium">Quality Ingredients</p>
-                </div>
+              <div className="aspect-square rounded-3xl overflow-hidden shadow-xl">
+                <img 
+                  src={puffPuffBox} 
+                  alt="Quality Ingredients - D'modish Products"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </motion.div>
 
