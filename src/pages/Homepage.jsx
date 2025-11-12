@@ -6,51 +6,62 @@ import { GiCakeSlice, GiChefToque, GiPartyFlags } from 'react-icons/gi';
 import { IoSparkles, IoGlobe } from 'react-icons/io5';
 import { MdVerified, MdDinnerDining, MdLocalShipping } from 'react-icons/md';
 import heroImg from '../assets/images/heroimg.jpg';
+import celebrationCake from '../assets/images/products/cake-celebrationcake.jpg';
+import celebrationCake2 from '../assets/images/products/cake-celebrationcake2.jpg';
+import birthdayCake from '../assets/images/products/cake-birthdaycake.jpg';
+import cakeSlice from '../assets/images/products/cake-cakeslice.jpg';
+import strawberryCakeSlice from '../assets/images/products/cake-strawberrybiscoffcakeslice.jpg';
+import puffPuff from '../assets/images/products/fried-puffpuff.jpg';
+import meatPie from '../assets/images/products/fried-meatpie.jpeg';
+import bananaBread from '../assets/images/products/baked-bananabread.jpg';
+import puffPuffBox from '../assets/images/products/fried-puffpuffbox.jpg';
+import expressCake from '../assets/images/products/cake-expresscake.jpg';
+import puffPuffMix from '../assets/images/products/fried-puffpuffmix.jpg';
 
 const Homepage = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   
-  // Sample products data - you can expand this later
+  // Products data with actual images
   const products = [
     { 
       id: 1, 
-      name: 'Special Cake',
-      image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&h=500&fit=crop'
+      name: 'Celebration Cake',
+      image: celebrationCake
     },
     { 
       id: 2, 
-      name: 'Chocolate Cake',
-      image: 'https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?w=500&h=500&fit=crop'
+      name: 'Birthday Cake',
+      image: birthdayCake
     },
     { 
       id: 3, 
-      name: 'Vanilla Cake',
-      image: 'https://images.unsplash.com/photo-1588195538326-c5b1e5b80c18?w=500&h=500&fit=crop'
+      name: 'Premium Celebration Cake',
+      image: celebrationCake2
     },
     { 
       id: 4, 
-      name: 'Red Velvet Cake',
-      image: 'https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?w=500&h=500&fit=crop'
+      name: 'Cake Slice',
+      image: cakeSlice
     },
     { 
       id: 5, 
-      name: 'Carrot Cake',
-      image: 'https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=500&h=500&fit=crop'
+      name: 'Strawberry Biscoff Slice',
+      image: strawberryCakeSlice
     },
     { 
       id: 6, 
-      name: 'Lemon Cake',
-      image: 'https://images.unsplash.com/photo-1519915212116-715da71ca8a8?w=500&h=500&fit=crop'
+      name: 'Puff Puff',
+      image: puffPuff
     },
     { 
       id: 7, 
-      name: 'Strawberry Cake',
-      image: 'https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=500&h=500&fit=crop'
+      name: 'Meat Pie',
+      image: meatPie
     },
     { 
       id: 8, 
-      name: 'Tiramisu Cake',
-      image: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=500&h=500&fit=crop'
+      name: 'Banana Bread',
+      image: bananaBread
     },
   ];
 
@@ -88,7 +99,7 @@ const Homepage = () => {
               Your Daily Dose of Delicious
             </h1>
             <p className="text-lg md:text-xl leading-relaxed text-white/95 mb-10 font-normal">
-              Where vibrant Nigerian flavours meet modern baking excellence in the heart of the UK
+              Authentic Nigerian flavours meet modern baking excellence • From £10 cake slices to £250 celebration cakes
             </p>
             <NavLink 
               to="/menu" 
@@ -106,39 +117,34 @@ const Homepage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left Image */}
             <div className="animate-[fadeInLeft_1s_ease-out]">
-              <div className="w-full h-[400px] lg:h-[500px] bg-gradient-to-br from-[#E1BF5E]/10 to-[#1F1D63]/5 rounded-lg flex items-center justify-center border-2 border-dashed border-[#1F1D63]/20">
-                <div className="text-center text-[#1F1D63] opacity-40">
-                  <svg className="w-16 h-16 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                  </svg>
-                  <p className="text-sm font-medium">Add featured product image</p>
-                </div>
+              <div className="w-full h-[400px] lg:h-[500px] rounded-lg overflow-hidden shadow-xl">
+                <img 
+                  src={puffPuffBox} 
+                  alt="Fresh Puff Puff Box"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
 
             {/* Right Content */}
             <div className="animate-[fadeInRight_1s_ease-out]">
               <span className="inline-block text-xs font-bold tracking-[2px] text-[#E1BF5E] uppercase mb-4">
-                Best Bread-Bun
+                Fresh Daily
               </span>
               <h2 className="font-['Playfair_Display'] text-3xl md:text-4xl lg:text-5xl leading-tight font-bold text-[#1F1D63] mb-6">
-                Best Bread-Buns Baked Fresh Daily with Love
+                Authentic Nigerian Treats Baked Fresh Daily
               </h2>
               <p className="text-base leading-relaxed text-gray-600 mb-5">
-                It is a long established fact that a reader will be distracted by the readable content of a page 
-                when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal 
-                distribution of letters, as opposed to using 'Content here, content here'.
+                At D'modish, we blend the rich culinary traditions of Nigeria with contemporary UK tastes to create premium treats that delight every palate.
               </p>
               <p className="text-base leading-relaxed text-gray-600 mb-6">
-                Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model 
-                text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various 
-                versions have evolved over the years.
+                From our moist celebration cakes topped with elegant designs to savory small chops platters bursting with spices, we're committed to freshness, quality, and innovation. Every item is crafted with love using locally sourced ingredients to ensure authenticity in every creation.
               </p>
               <NavLink 
                 to="/menu" 
                 className="inline-block bg-[#3d2514] text-white font-semibold py-3 px-8 rounded transition-all duration-300 hover:bg-[#2d1d10] hover:-translate-y-0.5 hover:shadow-[0_4px_12px_rgba(61,37,20,0.3)]"
               >
-                See Product
+                See Products
               </NavLink>
             </div>
           </div>
@@ -233,39 +239,34 @@ const Homepage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
             {/* Blog Image */}
             <div className="animate-[fadeInLeft_1s_ease-out]">
-              <div className="w-full h-[400px] bg-gradient-to-br from-[#E1BF5E]/10 to-[#1F1D63]/5 rounded-lg flex items-center justify-center border-2 border-dashed border-[#1F1D63]/20">
-                <div className="text-center text-[#1F1D63] opacity-40">
-                  <svg className="w-16 h-16 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                  </svg>
-                  <p className="text-sm font-medium">Add blog image</p>
-                </div>
+              <div className="w-full h-[400px] rounded-lg overflow-hidden shadow-xl">
+                <img 
+                  src={expressCake} 
+                  alt="Express Cake"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
 
             {/* Blog Content */}
             <div className="animate-[fadeInRight_1s_ease-out]">
               <span className="inline-block text-xs font-bold tracking-[1.5px] text-[#E1BF5E] uppercase mb-4">
-                28/22 Bread Bun
+                Our Specialty
               </span>
               <h2 className="font-['Playfair_Display'] text-3xl md:text-4xl leading-tight font-bold text-[#1F1D63] mb-6">
-                Best Bread-Buns Baked Fresh Daily with Love
+                Celebrating Heritage Through Premium Pastries
               </h2>
               <p className="text-base leading-relaxed text-gray-600 mb-5">
-                There's nothing like the smell of fresh-baked bread to welcome your guests or start your day. 
-                Our freshly baked bread is a recipe passed down from generation to generation. The bread is 
-                always soft and moist.
+                Welcome to D'modish, where the vibrant flavors of Nigerian cuisine meet modern baking excellence in the heart of the UK. We are more than just a bakery – we're a celebration of heritage, innovation, and quality.
               </p>
               <p className="text-base leading-relaxed text-gray-600 mb-5">
-                We produce scrumptious plain buns as well as raisin-infused ones. With time in our hands and 
-                our bakers working round the clock, you can now order fresh loaves of bread and buns every 
-                day of the week, all year round.
+                Founded with a deep passion for authentic African tastes, D'modish was created to bridge traditional recipes with contemporary standards, offering premium treats that delight every palate. Whether you're craving a savory bite or a sweet indulgence, our products are made with love, using locally sourced ingredients to ensure freshness and authenticity in every creation.
               </p>
               <NavLink 
                 to="/about" 
                 className="inline-block bg-[#1F1D63] text-white font-semibold py-3 px-8 rounded transition-all duration-300 mt-4 hover:bg-[#16143f] hover:-translate-y-0.5 hover:shadow-[0_4px_12px_rgba(31,29,99,0.3)]"
               >
-                Read More
+                Read Our Story
               </NavLink>
             </div>
           </div>
@@ -279,16 +280,23 @@ const Homepage = () => {
             Gallery
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {[1, 2, 3, 4, 5, 6].map((item) => (
+            {[
+              { image: celebrationCake, alt: 'Celebration Cake' },
+              { image: puffPuffMix, alt: 'Puff Puff Mix' },
+              { image: birthdayCake, alt: 'Birthday Cake' },
+              { image: meatPie, alt: 'Meat Pie' },
+              { image: strawberryCakeSlice, alt: 'Strawberry Biscoff Slice' },
+              { image: puffPuffBox, alt: 'Puff Puff Box' }
+            ].map((item, index) => (
               <div 
-                key={item} 
+                key={index} 
                 className="relative overflow-hidden rounded-lg aspect-square transition-all duration-300 hover:scale-105 hover:shadow-[0_8px_24px_rgba(31,29,99,0.2)]"
               >
-                <div className="w-full h-full bg-gradient-to-br from-[#E1BF5E]/15 to-[#1F1D63]/10 flex items-center justify-center border-2 border-dashed border-[#1F1D63]/20">
-                  <svg className="w-12 h-12 text-[#1F1D63] opacity-30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                  </svg>
-                </div>
+                <img 
+                  src={item.image} 
+                  alt={item.alt}
+                  className="w-full h-full object-cover"
+                />
               </div>
             ))}
           </div>
@@ -303,10 +311,13 @@ const Homepage = () => {
               Our Promise
             </span>
             <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-[#1F1D63] mb-6">
-              Why Choose D'modish Cakes
+              Why Choose D'modish FingerFoods & Bakes
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Experience the perfect blend of authentic Nigerian heritage and modern baking excellence
+            <p className="text-gray-600 max-w-3xl mx-auto text-lg">
+              <strong>Our Mission:</strong> To redefine the perception of Nigerian cuisine by delivering premium-quality pastries, finger foods, traditional drinks and baked products that combine authentic African flavours with modern culinary standards.
+            </p>
+            <p className="text-gray-600 max-w-3xl mx-auto text-lg mt-4">
+              <strong>Our Vision:</strong> To become the UK's leading Nigerian-inspired pastry, drinks and baked goods brand, recognised globally for excellence, innovation, and authenticity.
             </p>
           </div>
 
@@ -349,7 +360,7 @@ const Homepage = () => {
               </div>
               <h3 className="text-xl font-bold text-[#1F1D63] mb-3">Custom Celebrations</h3>
               <p className="text-gray-600 leading-relaxed">
-                Personalized cakes designed to make your special moments unforgettable
+                From £10 cake slices to £250 celebration cakes and £80 smallchops platters - tailored for every occasion
               </p>
             </div>
 

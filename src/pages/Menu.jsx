@@ -23,41 +23,41 @@ const Menu = () => {
     cakes: [
       {
         id: 1,
-        name: "Elegant Wedding Cake",
+        name: "Celebration Cake",
         category: "cakes",
-        description: "Multi-tiered masterpiece with intricate designs, personalized to match your wedding theme. Available in various flavors and sizes.",
-        features: ["Custom Design", "Multiple Tiers", "Fresh Flowers Option", "Serves 80-200+"],
-        priceRange: "Starting from £450",
+        description: "Custom-designed celebration cakes for weddings, birthdays, anniversaries and special events. Each cake is a masterpiece crafted to match your theme and taste preferences.",
+        features: ["Custom Design", "Multiple Tiers", "Fresh Ingredients", "Serves 30-80+"],
+        priceRange: "From £250",
         dietary: ["Vegan Option", "Gluten-Free Option"],
         image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&q=80"
       },
       {
         id: 2,
-        name: "Birthday Celebration Cake",
+        name: "Birthday Cake",
         category: "cakes",
-        description: "Custom-designed birthday cakes that bring your vision to life. From simple elegance to elaborate themed creations.",
-        features: ["Theme Customization", "Age Display", "Photo Printing Available", "Serves 15-50"],
-        priceRange: "Starting from £65",
+        description: "Personalized birthday cakes that bring joy to your special day. From simple elegance to elaborate themed creations with authentic Nigerian flavors.",
+        features: ["Theme Customization", "Age Display", "Photo Printing Available", "Serves 15-40"],
+        priceRange: "From £80",
         dietary: ["Dairy-Free Option"],
         image: "https://images.unsplash.com/photo-1558636508-e0db3814bd1d?w=800&q=80"
       },
       {
         id: 3,
-        name: "Anniversary Masterpiece",
+        name: "Cake Slice",
         category: "cakes",
-        description: "Romantic and sophisticated cakes perfect for celebrating years of love. Elegant designs with premium finishes.",
-        features: ["Gold/Silver Accents", "Romantic Designs", "Message Personalization", "Serves 20-60"],
-        priceRange: "Starting from £85",
-        dietary: ["Sugar-Free Option"],
+        description: "Individual cake slices perfect for a quick treat or everyday indulgence. Available in multiple flavors including chocolate, vanilla, and red velvet.",
+        features: ["Multiple Flavors", "Perfect Single Serving", "Fresh Daily", "Ready to Eat"],
+        priceRange: "£10 per slice",
+        dietary: ["Various Options"],
         image: "https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=800&q=80"
       },
       {
         id: 4,
-        name: "Corporate Event Cake",
+        name: "Express Cake",
         category: "cakes",
-        description: "Professional and branded cakes for corporate events, product launches, and business celebrations.",
-        features: ["Logo Integration", "Brand Colors", "Professional Finish", "Serves 30-100"],
-        priceRange: "Starting from £120",
+        description: "Quick turnaround cakes for last-minute celebrations. Simple yet elegant designs with authentic taste.",
+        features: ["24-48hr Turnaround", "Simple Designs", "Premium Quality", "Serves 8-15"],
+        priceRange: "From £45",
         dietary: ["Nut-Free Option"],
         image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800&q=80"
       }
@@ -65,89 +65,89 @@ const Menu = () => {
     fingerFoods: [
       {
         id: 5,
-        name: "Puff Puff Party Pack",
+        name: "Puff Puff",
         category: "finger-foods",
-        description: "Authentic Nigerian puff puff - sweet, fluffy, and irresistible. Perfect for any celebration or gathering.",
-        features: ["Freshly Made", "Traditional Recipe", "Party Favorite", "Minimum 50 pieces"],
-        priceRange: "£2.50 per dozen",
-        servingSize: "50-200 pieces",
+        description: "Authentic Nigerian puff puff - sweet, fluffy, and irresistible. Freshly made daily using traditional recipes passed down through generations.",
+        features: ["Freshly Made Daily", "Traditional Recipe", "Party Favorite", "Various Pack Sizes"],
+        priceRange: "From £5 per pack",
+        servingSize: "Individual or party packs available",
         image: "https://images.unsplash.com/photo-1600184893240-6c90f53d0588?w=800&q=80"
       },
       {
         id: 6,
-        name: "Premium Samosa Selection",
+        name: "Meat Pie",
         category: "finger-foods",
-        description: "Crispy samosas filled with spiced meat or vegetables. A fusion favorite at every event.",
-        features: ["Beef or Veggie Options", "Perfectly Spiced", "Golden & Crispy", "Minimum 30 pieces"],
-        priceRange: "£3.00 per dozen",
-        servingSize: "30-150 pieces",
-        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800&q=80"
-      },
-      {
-        id: 7,
-        name: "Nigerian Meat Pies",
-        category: "finger-foods",
-        description: "Flaky pastry filled with savory seasoned beef and vegetables. A nostalgic taste of home.",
-        features: ["Flaky Crust", "Savory Filling", "Party Size Available", "Minimum 20 pieces"],
-        priceRange: "£2.00 each",
-        servingSize: "20-100 pieces",
+        description: "Flaky pastry filled with savory seasoned beef and vegetables. A nostalgic taste of home that's perfect for any occasion.",
+        features: ["Flaky Crust", "Savory Beef Filling", "Perfectly Spiced", "Individual or Bulk"],
+        priceRange: "£3.50 each",
+        servingSize: "Individual portions",
         image: "https://images.unsplash.com/photo-1619873981210-77999c065e75?w=800&q=80"
       },
       {
-        id: 8,
+        id: 7,
         name: "Small Chops Platter",
         category: "finger-foods",
-        description: "Assorted Nigerian finger foods including spring rolls, samosas, puff puff, and more. Perfect party platter.",
-        features: ["Variety Selection", "Professionally Arranged", "Customizable Mix", "Serves 10-50"],
-        priceRange: "£45 per platter",
+        description: "Assorted Nigerian finger foods bursting with spices. Perfect party platter with a variety of authentic treats professionally arranged.",
+        features: ["Variety Selection", "Professionally Arranged", "Customizable Mix", "Serves 10-15"],
+        priceRange: "£80 per platter",
         servingSize: "Serves 10-15 guests",
         image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80"
       },
       {
-        id: 9,
-        name: "Chin Chin Party Pack",
+        id: 8,
+        name: "Spring Rolls",
         category: "finger-foods",
-        description: "Crunchy, sweet Nigerian snack perfect for munching. Available in various flavors.",
-        features: ["Multiple Flavors", "Long Shelf Life", "Perfect Gift", "Bulk Available"],
-        priceRange: "£8 per 500g bag",
-        servingSize: "Serves 8-12",
+        description: "Crispy spring rolls with Nigerian-spiced fillings. A fusion favorite that combines authentic African flavors with contemporary presentation.",
+        features: ["Crispy & Golden", "Perfectly Spiced", "Party Size Available", "Vegetarian Option"],
+        priceRange: "£2.50 each",
+        servingSize: "Minimum 10 pieces",
+        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800&q=80"
+      },
+      {
+        id: 9,
+        name: "Samosa",
+        category: "finger-foods",
+        description: "Premium samosas filled with spiced meat or vegetables. Golden, crispy, and perfectly seasoned for your events.",
+        features: ["Beef or Veggie Options", "Perfectly Spiced", "Golden & Crispy", "Bulk Orders Available"],
+        priceRange: "£2.50 each",
+        servingSize: "Minimum 10 pieces",
         image: "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=800&q=80"
       }
     ],
     pastries: [
       {
         id: 10,
-        name: "Artisan Bread Buns",
+        name: "Banana Bread",
         category: "pastries",
-        description: "Soft, fluffy Nigerian-style bread buns. Perfect for breakfast or as a sweet snack.",
-        features: ["Freshly Baked Daily", "Soft & Fluffy", "Traditional Recipe", "Pack of 6"],
-        priceRange: "£6 per pack",
-        dietary: ["Dairy-Free"],
+        description: "Moist, flavorful banana bread baked fresh daily. Perfect for breakfast or as a sweet snack with tea or coffee.",
+        features: ["Freshly Baked Daily", "Moist & Flavorful", "Premium Ingredients", "Slice or Loaf"],
+        priceRange: "From £8",
+        dietary: ["Dairy-Free Option"],
         image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&q=80"
       },
       {
         id: 11,
-        name: "Fusion Croissants",
+        name: "Strawberry Biscoff Cake Slice",
         category: "pastries",
-        description: "Buttery croissants with Nigerian-inspired fillings. A unique East-meets-West treat.",
-        features: ["Butter-Rich Layers", "Unique Fillings", "Fresh Daily", "Minimum 6 pieces"],
-        priceRange: "£3.50 each",
-        dietary: ["Vegetarian Options"],
+        description: "Indulgent cake slice combining fresh strawberries with Biscoff spread. A modern twist on traditional cake.",
+        features: ["Fresh Strawberries", "Biscoff Flavor", "Individual Serving", "Fresh Daily"],
+        priceRange: "£12 per slice",
+        dietary: ["Vegetarian"],
         image: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&q=80"
       },
       {
         id: 12,
-        name: "Mini Cupcake Collection",
+        name: "Mini Cupcakes",
         category: "pastries",
-        description: "Bite-sized cupcakes in various flavors with buttercream frosting. Perfect for events.",
+        description: "Bite-sized cupcakes in various flavors with buttercream frosting. Perfect for events and celebrations.",
         features: ["Multiple Flavors", "Beautiful Decoration", "Individual Portions", "Minimum 24 pieces"],
-        priceRange: "£30 per dozen",
+        priceRange: "From £25 per dozen",
         dietary: ["Vegan Available"],
         image: "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=800&q=80"
       },
       {
         id: 13,
-        name: "Chocolate Brownies",
+        name: "Bread Buns",
         category: "pastries",
         description: "Rich, fudgy brownies that melt in your mouth. Decadent chocolate in every bite.",
         features: ["Fudgy Texture", "Premium Chocolate", "Cut to Size", "Minimum 12 pieces"],
@@ -481,36 +481,50 @@ const Menu = () => {
                 <div className="flex justify-between items-start pb-4 border-b border-gray-200">
                   <div>
                     <p className="font-semibold text-[#1F1D63]">Celebration Cakes</p>
-                    <p className="text-sm text-gray-600">Custom designs, multiple sizes</p>
+                    <p className="text-sm text-gray-600">Custom designs for special events</p>
                   </div>
-                  <span className="text-[#E1BF5E] font-bold">From £65</span>
+                  <span className="text-[#E1BF5E] font-bold">£250</span>
                 </div>
                 <div className="flex justify-between items-start pb-4 border-b border-gray-200">
                   <div>
-                    <p className="font-semibold text-[#1F1D63]">Wedding Cakes</p>
-                    <p className="text-sm text-gray-600">Multi-tier, fully customizable</p>
+                    <p className="font-semibold text-[#1F1D63]">Cake Slices</p>
+                    <p className="text-sm text-gray-600">Perfect for everyday indulgence</p>
                   </div>
-                  <span className="text-[#E1BF5E] font-bold">From £450</span>
+                  <span className="text-[#E1BF5E] font-bold">£10</span>
                 </div>
                 <div className="flex justify-between items-start pb-4 border-b border-gray-200">
                   <div>
-                    <p className="font-semibold text-[#1F1D63]">Finger Foods</p>
-                    <p className="text-sm text-gray-600">Per dozen or bulk orders</p>
+                    <p className="font-semibold text-[#1F1D63]">Smallchops Platters</p>
+                    <p className="text-sm text-gray-600">Assorted finger foods for gatherings</p>
                   </div>
-                  <span className="text-[#E1BF5E] font-bold">From £2/dozen</span>
+                  <span className="text-[#E1BF5E] font-bold">£80</span>
                 </div>
-                <div className="flex justify-between items-start">
+                <div className="flex justify-between items-start pb-4">
                   <div>
-                    <p className="font-semibold text-[#1F1D63]">Pastries & Desserts</p>
-                    <p className="text-sm text-gray-600">Individual or bulk pricing</p>
+                    <p className="font-semibold text-[#1F1D63]">Individual Finger Foods</p>
+                    <p className="text-sm text-gray-600">Puff puff, meat pies, spring rolls</p>
                   </div>
-                  <span className="text-[#E1BF5E] font-bold">From £3 each</span>
+                  <span className="text-[#E1BF5E] font-bold">From £2.50</span>
                 </div>
               </div>
-              <div className="mt-6 p-4 bg-[#E1BF5E]/10 rounded-xl">
-                <p className="text-sm text-gray-700">
-                  <strong>Note:</strong> Final pricing depends on design complexity, size, and customization requirements. Contact us for a detailed quote.
-                </p>
+              
+              {/* Dietary Options */}
+              <div className="mt-6 p-4 bg-[#f8f9fa] rounded-xl">
+                <p className="text-sm font-semibold text-[#1F1D63] mb-2">Dietary Options Available:</p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700 border border-gray-200">
+                    <FaLeaf className="inline mr-1 text-green-600" />Vegan
+                  </span>
+                  <span className="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700 border border-gray-200">
+                    Gluten-Free
+                  </span>
+                  <span className="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700 border border-gray-200">
+                    Dairy-Free
+                  </span>
+                  <span className="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700 border border-gray-200">
+                    Nut-Free
+                  </span>
+                </div>
               </div>
             </motion.div>
 
@@ -615,6 +629,119 @@ const Menu = () => {
               </li>
             </ul>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Special Programmes Section */}
+      <section className="bg-white py-20">
+        <div className="max-w-7xl mx-auto px-8 md:px-16 lg:px-20 xl:px-24">
+          <div className="text-center mb-16">
+            <span className="inline-block text-xs font-bold tracking-[2px] text-[#E1BF5E] uppercase mb-4">
+              Exclusive Services
+            </span>
+            <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-[#1F1D63] mb-6">
+              Special Programmes
+            </h2>
+            <p className="text-gray-600 max-w-3xl mx-auto text-lg">
+              Innovative services designed to make your life easier and healthier
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* WeightSmart Programme */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="bg-gradient-to-br from-[#f8f9fa] to-white p-8 rounded-3xl shadow-lg border-2 border-[#E1BF5E]/20 hover:border-[#E1BF5E] hover:shadow-xl transition-all duration-300"
+            >
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-[#E1BF5E] to-[#d4a838] rounded-2xl flex items-center justify-center">
+                  <FaLeaf className="text-3xl text-white" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-[#1F1D63]">WeightSmart FingerFoods</h3>
+                  <p className="text-sm text-[#E1BF5E] font-semibold">Subscription Programme</p>
+                </div>
+              </div>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                A subscription-based healthy-eating initiative allowing clients to select meals aligned with personal goals — 
+                <strong> weight loss, maintenance, or strength gain</strong>. Our AI-assisted recipe planner and portion-control 
+                system ensure balanced nutrition without compromising flavour.
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <IoCheckmarkCircle className="text-[#E1BF5E] text-xl flex-shrink-0" />
+                  <span className="text-gray-700">Personalized meal plans based on your goals</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <IoCheckmarkCircle className="text-[#E1BF5E] text-xl flex-shrink-0" />
+                  <span className="text-gray-700">AI-assisted recipe planner</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <IoCheckmarkCircle className="text-[#E1BF5E] text-xl flex-shrink-0" />
+                  <span className="text-gray-700">Portion-controlled servings</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <IoCheckmarkCircle className="text-[#E1BF5E] text-xl flex-shrink-0" />
+                  <span className="text-gray-700">Authentic flavors, balanced nutrition</span>
+                </div>
+              </div>
+              <div className="mt-6 p-4 bg-[#E1BF5E]/10 rounded-xl">
+                <p className="text-sm text-gray-700">
+                  <strong>Coming Soon!</strong> Register your interest for early access to our WeightSmart programme.
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Birthday Scheduler Programme */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="bg-gradient-to-br from-[#f8f9fa] to-white p-8 rounded-3xl shadow-lg border-2 border-[#E1BF5E]/20 hover:border-[#E1BF5E] hover:shadow-xl transition-all duration-300"
+            >
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-[#E1BF5E] to-[#d4a838] rounded-2xl flex items-center justify-center">
+                  <GiPartyFlags className="text-3xl text-white" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-[#1F1D63]">Programmed Birthday Scheduler</h3>
+                  <p className="text-sm text-[#E1BF5E] font-semibold">Automated Gift Service</p>
+                </div>
+              </div>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                A unique automation service that enables customers to <strong>pre-schedule birthday cakes, party boxes, 
+                and food trays for loved ones</strong>. The system sends a 5-day reminder before preparation, ensuring 
+                gifts arrive on time — making celebration effortless.
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <IoCheckmarkCircle className="text-[#E1BF5E] text-xl flex-shrink-0" />
+                  <span className="text-gray-700">Pre-schedule cakes and gift boxes</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <IoCheckmarkCircle className="text-[#E1BF5E] text-xl flex-shrink-0" />
+                  <span className="text-gray-700">5-day advance reminder system</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <IoCheckmarkCircle className="text-[#E1BF5E] text-xl flex-shrink-0" />
+                  <span className="text-gray-700">Automated preparation & delivery</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <IoCheckmarkCircle className="text-[#E1BF5E] text-xl flex-shrink-0" />
+                  <span className="text-gray-700">Never miss a loved one's birthday again</span>
+                </div>
+              </div>
+              <div className="mt-6 p-4 bg-[#E1BF5E]/10 rounded-xl">
+                <p className="text-sm text-gray-700">
+                  <strong>Make celebrations effortless!</strong> Set it once and we'll handle the rest, every year.
+                </p>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
