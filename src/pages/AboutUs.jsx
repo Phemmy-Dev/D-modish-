@@ -1,0 +1,624 @@
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { FaHeart, FaStar, FaUsers, FaLeaf, FaTrophy, FaHandshake } from 'react-icons/fa';
+import { GiCupcake, GiCakeSlice, GiPartyFlags } from 'react-icons/gi';
+import { IoSparkles } from 'react-icons/io5';
+import heroImg from '../assets/images/heroimg.jpg';
+
+const AboutUs = () => {
+  return (
+    <div className="pt-24">
+      {/* Hero Section */}
+      <section 
+        className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden bg-cover bg-center" 
+        style={{ backgroundImage: `url(${heroImg})` }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50 z-1"></div>
+        <div className="relative z-2 text-center px-6 max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <h1 className="font-['Playfair_Display'] text-5xl md:text-6xl lg:text-7xl leading-tight font-bold text-white mb-6">
+              Our Story
+            </h1>
+            <p className="text-xl md:text-2xl text-[#E1BF5E] font-semibold mb-4 italic">
+              "Taste. Style. Celebration!"
+            </p>
+            <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto">
+              Where Nigerian heritage meets modern baking excellence
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Our Story Section */}
+      <section className="bg-white">
+        <div className="max-w-7xl mx-auto px-8 md:px-16 lg:px-20 xl:px-24 py-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            {/* Left Content */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <span className="inline-block text-xs font-bold tracking-[2px] text-[#E1BF5E] uppercase mb-4">
+                About D'modish
+              </span>
+              <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-[#1F1D63] mb-6">
+                A Journey of Passion & Heritage
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                D'modish FingerFoods and Bakes Ltd was born from a deep passion for celebrating Nigerian culinary 
+                heritage while embracing the sophistication of modern baking. Our journey began with a simple dream: 
+                to bring authentic Nigerian flavors to the UK, reimagined for contemporary palates.
+              </p>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                Founded by a team of culinary enthusiasts with roots in both Nigeria and the UK, we understand the 
+                power of food to connect cultures, create memories, and bring people together. Every recipe we craft 
+                carries the warmth of family traditions passed down through generations.
+              </p>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Today, we proudly serve diverse communities across the UK, offering not just baked goods, but 
+                experiences that celebrate life's special moments with authentic taste, impeccable style, and 
+                genuine joy.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <div className="flex items-center gap-3 bg-[#f5f5f5] px-6 py-3 rounded-full">
+                  <IoSparkles className="text-[#E1BF5E] text-2xl" />
+                  <span className="font-semibold text-[#1F1D63]">Est. 2020</span>
+                </div>
+                <div className="flex items-center gap-3 bg-[#f5f5f5] px-6 py-3 rounded-full">
+                  <FaUsers className="text-[#E1BF5E] text-2xl" />
+                  <span className="font-semibold text-[#1F1D63]">1000+ Happy Customers</span>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Right Image */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="relative"
+            >
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <div className="aspect-[4/5] bg-gradient-to-br from-[#E1BF5E]/10 to-[#1F1D63]/5 flex items-center justify-center border-2 border-dashed border-[#1F1D63]/20">
+                  <div className="text-center text-[#1F1D63] opacity-40">
+                    <svg className="w-20 h-20 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                    <p className="text-lg font-medium">Our Story Image</p>
+                  </div>
+                </div>
+                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[#E1BF5E] rounded-full opacity-20 blur-3xl"></div>
+                <div className="absolute -top-6 -left-6 w-32 h-32 bg-[#1F1D63] rounded-full opacity-20 blur-3xl"></div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission & Values Section */}
+      <section className="bg-[#f5f5f5]">
+        <div className="max-w-7xl mx-auto px-8 md:px-16 lg:px-20 xl:px-24 py-20">
+          <div className="text-center mb-16">
+            <span className="inline-block text-xs font-bold tracking-[2px] text-[#E1BF5E] uppercase mb-4">
+              Our Foundation
+            </span>
+            <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-[#1F1D63] mb-6">
+              Mission & Core Values
+            </h2>
+            <p className="text-gray-600 max-w-3xl mx-auto text-lg">
+              We are committed to celebrating culture through quality, creativity, and excellence
+            </p>
+          </div>
+
+          {/* Mission Statement */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="bg-gradient-to-br from-[#1F1D63] to-[#16143f] text-white p-8 md:p-12 rounded-3xl mb-12 relative overflow-hidden"
+          >
+            <div className="absolute top-0 right-0 w-64 h-64 bg-[#E1BF5E]/10 rounded-full blur-3xl"></div>
+            <div className="relative z-10">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-[#E1BF5E] rounded-2xl flex items-center justify-center">
+                  <FaTrophy className="text-3xl text-[#1F1D63]" />
+                </div>
+                <h3 className="text-3xl font-bold">Our Mission</h3>
+              </div>
+              <p className="text-lg md:text-xl leading-relaxed text-white/90">
+                To bridge cultures through exceptional Afro-Fusion baking, delivering authentic Nigerian flavors 
+                with modern sophistication. We create memorable experiences that celebrate life's special moments 
+                with premium quality, artistic presentation, and heartfelt service.
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Core Values Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+            >
+              <div className="w-14 h-14 bg-gradient-to-br from-[#E1BF5E] to-[#d4a838] rounded-xl flex items-center justify-center mb-4">
+                <FaHeart className="text-2xl text-white" />
+              </div>
+              <h4 className="text-xl font-bold text-[#1F1D63] mb-3">Authenticity</h4>
+              <p className="text-gray-600">
+                Honoring traditional recipes while embracing innovation
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+            >
+              <div className="w-14 h-14 bg-gradient-to-br from-[#E1BF5E] to-[#d4a838] rounded-xl flex items-center justify-center mb-4">
+                <FaStar className="text-2xl text-white" />
+              </div>
+              <h4 className="text-xl font-bold text-[#1F1D63] mb-3">Excellence</h4>
+              <p className="text-gray-600">
+                Premium ingredients and meticulous craftsmanship in every creation
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+            >
+              <div className="w-14 h-14 bg-gradient-to-br from-[#E1BF5E] to-[#d4a838] rounded-xl flex items-center justify-center mb-4">
+                <IoSparkles className="text-2xl text-white" />
+              </div>
+              <h4 className="text-xl font-bold text-[#1F1D63] mb-3">Innovation</h4>
+              <p className="text-gray-600">
+                Constantly evolving with creative fusion and contemporary techniques
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+            >
+              <div className="w-14 h-14 bg-gradient-to-br from-[#E1BF5E] to-[#d4a838] rounded-xl flex items-center justify-center mb-4">
+                <FaHandshake className="text-2xl text-white" />
+              </div>
+              <h4 className="text-xl font-bold text-[#1F1D63] mb-3">Customer First</h4>
+              <p className="text-gray-600">
+                Building lasting relationships through exceptional service
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* What Makes Us Different */}
+      <section className="bg-white">
+        <div className="max-w-7xl mx-auto px-8 md:px-16 lg:px-20 xl:px-24 py-20">
+          <div className="text-center mb-16">
+            <span className="inline-block text-xs font-bold tracking-[2px] text-[#E1BF5E] uppercase mb-4">
+              Our Edge
+            </span>
+            <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-[#1F1D63] mb-6">
+              What Makes Us Different
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="bg-gradient-to-br from-[#f8f9fa] to-white p-8 rounded-2xl border-l-4 border-[#E1BF5E] hover:shadow-xl transition-all duration-300"
+            >
+              <div className="flex items-start gap-4 mb-4">
+                <div className="w-12 h-12 bg-[#E1BF5E] rounded-xl flex items-center justify-center flex-shrink-0">
+                  <GiCupcake className="text-2xl text-white" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-[#1F1D63] mb-3">Afro-Fusion Mastery</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    We've perfected the art of blending authentic Nigerian flavors with contemporary baking 
+                    techniques, creating unique taste experiences you won't find anywhere else.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="bg-gradient-to-br from-[#f8f9fa] to-white p-8 rounded-2xl border-l-4 border-[#E1BF5E] hover:shadow-xl transition-all duration-300"
+            >
+              <div className="flex items-start gap-4 mb-4">
+                <div className="w-12 h-12 bg-[#E1BF5E] rounded-xl flex items-center justify-center flex-shrink-0">
+                  <IoSparkles className="text-2xl text-white" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-[#1F1D63] mb-3">Total Customization</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    From design to flavor profiles, every creation is tailored to your vision. We work closely 
+                    with you to ensure your celebration is uniquely yours.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="bg-gradient-to-br from-[#f8f9fa] to-white p-8 rounded-2xl border-l-4 border-[#E1BF5E] hover:shadow-xl transition-all duration-300"
+            >
+              <div className="flex items-start gap-4 mb-4">
+                <div className="w-12 h-12 bg-[#E1BF5E] rounded-xl flex items-center justify-center flex-shrink-0">
+                  <FaStar className="text-2xl text-white" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-[#1F1D63] mb-3">Artisanal Attention</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Every detail matters. From ingredient selection to final presentation, we bring meticulous 
+                    care and artistic flair to every single order.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="bg-gradient-to-br from-[#f8f9fa] to-white p-8 rounded-2xl border-l-4 border-[#E1BF5E] hover:shadow-xl transition-all duration-300"
+            >
+              <div className="flex items-start gap-4 mb-4">
+                <div className="w-12 h-12 bg-[#E1BF5E] rounded-xl flex items-center justify-center flex-shrink-0">
+                  <GiCakeSlice className="text-2xl text-white" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-[#1F1D63] mb-3">Heritage Meets Modern</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    We honor time-tested family recipes while embracing modern culinary innovations, giving 
+                    you the best of both worlds.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Specialties */}
+      <section className="bg-[#1F1D63] text-white">
+        <div className="max-w-7xl mx-auto px-8 md:px-16 lg:px-20 xl:px-24 py-20">
+          <div className="text-center mb-16">
+            <span className="inline-block text-xs font-bold tracking-[2px] text-[#E1BF5E] uppercase mb-4">
+              What We Offer
+            </span>
+            <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-white mb-6">
+              Our Specialties
+            </h2>
+            <p className="text-white/80 max-w-3xl mx-auto text-lg">
+              From intimate gatherings to grand celebrations, we craft unforgettable experiences
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 hover:bg-white/20 transition-all duration-300"
+            >
+              <GiPartyFlags className="text-5xl text-[#E1BF5E] mb-4" />
+              <h3 className="text-2xl font-bold mb-4">Celebration Cakes</h3>
+              <p className="text-white/80 leading-relaxed mb-4">
+                Custom-designed cakes for weddings, birthdays, and special occasions. Each cake is a 
+                masterpiece crafted to match your theme and taste preferences.
+              </p>
+              <ul className="space-y-2 text-white/70">
+                <li className="flex items-center gap-2">
+                  <span className="text-[#E1BF5E]">✓</span> Wedding Cakes
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-[#E1BF5E]">✓</span> Birthday Cakes
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-[#E1BF5E]">✓</span> Anniversary Cakes
+                </li>
+              </ul>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 hover:bg-white/20 transition-all duration-300"
+            >
+              <GiCupcake className="text-5xl text-[#E1BF5E] mb-4" />
+              <h3 className="text-2xl font-bold mb-4">Nigerian Finger Foods</h3>
+              <p className="text-white/80 leading-relaxed mb-4">
+                Authentic Nigerian snacks and pastries made with love. Perfect for parties, corporate 
+                events, or when you're craving a taste of home.
+              </p>
+              <ul className="space-y-2 text-white/70">
+                <li className="flex items-center gap-2">
+                  <span className="text-[#E1BF5E]">✓</span> Puff Puff & Chin Chin
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-[#E1BF5E]">✓</span> Meat Pies & Samosas
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-[#E1BF5E]">✓</span> Small Chops Platters
+                </li>
+              </ul>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 hover:bg-white/20 transition-all duration-300"
+            >
+              <GiCakeSlice className="text-5xl text-[#E1BF5E] mb-4" />
+              <h3 className="text-2xl font-bold mb-4">Artisan Pastries</h3>
+              <p className="text-white/80 leading-relaxed mb-4">
+                Freshly baked bread, buns, and pastries that blend traditional recipes with contemporary 
+                baking techniques for exceptional taste.
+              </p>
+              <ul className="space-y-2 text-white/70">
+                <li className="flex items-center gap-2">
+                  <span className="text-[#E1BF5E]">✓</span> Fresh Bread & Buns
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-[#E1BF5E]">✓</span> Fusion Pastries
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-[#E1BF5E]">✓</span> Dietary Options
+                </li>
+              </ul>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Quality & Craftsmanship */}
+      <section className="bg-white">
+        <div className="max-w-7xl mx-auto px-8 md:px-16 lg:px-20 xl:px-24 py-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            {/* Left Image */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className="aspect-square bg-gradient-to-br from-[#E1BF5E]/10 to-[#1F1D63]/5 rounded-3xl flex items-center justify-center border-2 border-dashed border-[#1F1D63]/20">
+                <div className="text-center text-[#1F1D63] opacity-40">
+                  <FaLeaf className="text-6xl mx-auto mb-4" />
+                  <p className="text-lg font-medium">Quality Ingredients</p>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Right Content */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <span className="inline-block text-xs font-bold tracking-[2px] text-[#E1BF5E] uppercase mb-4">
+                Our Promise
+              </span>
+              <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-[#1F1D63] mb-6">
+                Quality & Craftsmanship
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                At D'modish, quality isn't just a buzzword—it's our foundation. We source only the finest, 
+                freshest ingredients, ensuring every bite delivers exceptional taste and nutritional value.
+              </p>
+
+              <div className="space-y-4 mb-8">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-[#E1BF5E]/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <FaLeaf className="text-[#E1BF5E]" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-[#1F1D63] mb-2">Premium Ingredients</h4>
+                    <p className="text-gray-600">
+                      Fresh, high-quality ingredients sourced daily from trusted suppliers
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-[#E1BF5E]/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <FaHeart className="text-[#E1BF5E]" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-[#1F1D63] mb-2">Handcrafted with Care</h4>
+                    <p className="text-gray-600">
+                      Every item is made fresh to order with meticulous attention to detail
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-[#E1BF5E]/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <IoSparkles className="text-[#E1BF5E]" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-[#1F1D63] mb-2">Dietary Flexibility</h4>
+                    <p className="text-gray-600">
+                      Vegan, gluten-free, and custom dietary requirements accommodated
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <NavLink 
+                to="/hygiene"
+                className="inline-block bg-[#1F1D63] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#16143f] transition-all duration-300 hover:-translate-y-1 shadow-lg"
+              >
+                Learn About Our Standards
+              </NavLink>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose D'modish - Testimonials */}
+      <section className="bg-[#f5f5f5]">
+        <div className="max-w-7xl mx-auto px-8 md:px-16 lg:px-20 xl:px-24 py-20">
+          <div className="text-center mb-16">
+            <span className="inline-block text-xs font-bold tracking-[2px] text-[#E1BF5E] uppercase mb-4">
+              Client Love
+            </span>
+            <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-[#1F1D63] mb-6">
+              Why Our Customers Choose Us
+            </h2>
+            <p className="text-gray-600 max-w-3xl mx-auto text-lg">
+              Don't just take our word for it—hear from those who've experienced the D'modish difference
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                name: "Ngozi Adebayo",
+                location: "London",
+                rating: 5,
+                text: "D'modish catered our wedding and everyone couldn't stop talking about how delicious everything was! The cake was stunning and tasted even better than it looked."
+              },
+              {
+                name: "James Thompson",
+                location: "Manchester",
+                rating: 5,
+                text: "As a corporate event planner, I've worked with many caterers. D'modish stands out for their professionalism, creativity, and consistently excellent quality."
+              },
+              {
+                name: "Amara Okafor",
+                location: "Birmingham",
+                rating: 5,
+                text: "Finally found authentic Nigerian snacks in the UK! The chin chin and puff puff take me right back home. D'modish is now my go-to for all celebrations."
+              }
+            ].map((testimonial, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                <div className="flex gap-1 mb-4">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <FaStar key={i} className="text-[#E1BF5E]" />
+                  ))}
+                </div>
+                <p className="text-gray-700 italic mb-6 leading-relaxed">
+                  "{testimonial.text}"
+                </p>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#E1BF5E] to-[#d4a838] rounded-full flex items-center justify-center text-white font-bold">
+                    {testimonial.name.charAt(0)}
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-[#1F1D63]">{testimonial.name}</h4>
+                    <p className="text-sm text-gray-500">{testimonial.location}, UK</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <div className="inline-flex items-center gap-8 bg-white px-8 py-6 rounded-2xl shadow-lg">
+              <div className="text-center">
+                <p className="text-4xl font-bold text-[#1F1D63] mb-1">1000+</p>
+                <p className="text-gray-600 text-sm">Happy Customers</p>
+              </div>
+              <div className="w-px h-12 bg-gray-300"></div>
+              <div className="text-center">
+                <p className="text-4xl font-bold text-[#1F1D63] mb-1">500+</p>
+                <p className="text-gray-600 text-sm">Events Catered</p>
+              </div>
+              <div className="w-px h-12 bg-gray-300"></div>
+              <div className="text-center">
+                <p className="text-4xl font-bold text-[#1F1D63] mb-1">5★</p>
+                <p className="text-gray-600 text-sm">Average Rating</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="bg-gradient-to-br from-[#1F1D63] to-[#16143f] text-white">
+        <div className="max-w-7xl mx-auto px-8 md:px-16 lg:px-20 xl:px-24 py-20">
+          <div className="text-center max-w-3xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl font-bold mb-6">
+                Ready to Experience the D'modish Difference?
+              </h2>
+              <p className="text-xl text-white/80 mb-10">
+                Let's create something extraordinary together for your next celebration
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <NavLink 
+                  to="/menu"
+                  className="inline-block bg-[#E1BF5E] text-[#1F1D63] px-10 py-4 rounded-full text-lg font-bold hover:bg-[#d4a838] transition-all duration-300 hover:-translate-y-1 shadow-lg"
+                >
+                  Explore Our Menu
+                </NavLink>
+                <NavLink 
+                  to="/order"
+                  className="inline-block bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-white/20 transition-all duration-300"
+                >
+                  Contact Us
+                </NavLink>
+              </div>
+              <p className="text-white/60 mt-8">
+                Or view our <NavLink to="/gallery" className="text-[#E1BF5E] hover:underline">portfolio gallery</NavLink> for inspiration
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default AboutUs;
