@@ -589,7 +589,7 @@ const Hygiene = () => {
               </div>
             </div>
             <div className="text-center mt-8">
-              <p className="text-white/60 text-sm">Last inspected: October 2025 | Next scheduled: April 2026</p>
+              <p className="text-white/60 text-sm">Last inspected: April 2025 | Next scheduled: Awaiting</p>
             </div>
           </motion.div>
         </div>

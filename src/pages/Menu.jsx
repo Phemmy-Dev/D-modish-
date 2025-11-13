@@ -94,7 +94,7 @@ const Menu = () => {
         category: "cakes",
         description: "Quick turnaround cakes for last-minute celebrations. Simple yet elegant designs with authentic taste.",
         features: ["24-48hr Turnaround", "Simple Designs", "Premium Quality", "Serves 8-15"],
-        priceRange: "From £35 per dozen",
+        priceRange: "From £35",
         image: cupcake2
       },
       {
@@ -115,15 +115,6 @@ const Menu = () => {
         priceRange: "From £250",
         image: premiumbirthdaycake
       },
-      {
-        id: 6,
-        name: "Premium Birthday Cake",
-        category: "cakes",
-        description: "Quick turnaround cakes for last-minute celebrations. Simple yet elegant designs with authentic taste.",
-        features: ["24-48hr Turnaround", "Simple Designs", "Premium Quality", "Serves 8-15"],
-        priceRange: "From £250",
-        image: premiumbirthdaycake
-      }
     ],
     fingerFoods: [
       {
@@ -179,7 +170,7 @@ const Menu = () => {
         category: "pastries",
         description: "Moist, flavorful banana bread baked fresh daily. Perfect for breakfast or as a sweet snack with tea or coffee.",
         features: ["Freshly Baked Daily", "Moist & Flavorful", "Premium Ingredients", "Slice or Loaf"],
-        priceRange: "From £8",
+        priceRange: "From £15",
         image: bananaBread
       },
       {
@@ -197,17 +188,8 @@ const Menu = () => {
         category: "pastries",
         description: "Bite-sized cupcakes in various flavors with buttercream frosting. Perfect for events and celebrations.",
         features: ["Multiple Flavors", "Beautiful Decoration", "Individual Portions", "Minimum 24 pieces"],
-        priceRange: "From £25 per dozen",
-        image: cakeSlice
-      },
-      {
-        id: 13,
-        name: "Bread Buns",
-        category: "pastries",
-        description: "Soft, fluffy Nigerian-style bread buns. Perfect for breakfast or as a sweet snack.",
-        features: ["Freshly Baked Daily", "Soft & Fluffy", "Traditional Recipe", "Pack of 6"],
-        priceRange: "From £6 per pack",
-        image: bananaBread
+        priceRange: "From £35",
+        image: cupcakes
       },
       {
         id: 15,
@@ -215,7 +197,7 @@ const Menu = () => {
         category: "pastries",
         description: "Assorted pastries and treats. A delightful mix of our freshly baked specialties.",
         features: ["Variety Pack", "Fresh Daily", "Perfect for Sharing", "Minimum 6 pieces"],
-        priceRange: "",
+        priceRange: "From £15",
         image: friedcarrotbanana
       },
       {
