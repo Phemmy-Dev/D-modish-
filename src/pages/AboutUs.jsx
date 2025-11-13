@@ -5,8 +5,8 @@ import { FaHeart, FaStar, FaUsers, FaLeaf, FaTrophy, FaHandshake } from 'react-i
 import { GiCupcake, GiCakeSlice, GiPartyFlags } from 'react-icons/gi';
 import { IoSparkles } from 'react-icons/io5';
 import heroImg from '../assets/images/heroimg.jpg';
-import celebrationCake from '../assets/images/products/cake-celebrationcake.jpg';
-import puffPuffBox from '../assets/images/products/fried-puffpuffbox.jpg';
+import celebrationCake from '../assets/images/cake-birthday.jpg';
+import puffPuffBox from '../assets/images/cake-twostep.jpg';
 
 const AboutUs = () => {
   return (
@@ -729,12 +729,14 @@ const AboutUs = () => {
                 >
                   Explore Our Menu
                 </NavLink>
-                <NavLink 
-                  to="/order"
+                <a 
+                  href="https://wa.link/fcqc2g"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-block bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-white/20 transition-all duration-300"
                 >
                   Contact Us
-                </NavLink>
+                </a>
               </div>
               <p className="text-white/60 mt-8">
                 Or view our <NavLink to="/gallery" className="text-[#E1BF5E] hover:underline">portfolio gallery</NavLink> for inspiration

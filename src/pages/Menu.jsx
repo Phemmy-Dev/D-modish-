@@ -6,16 +6,26 @@ import { GiCupcake, GiCakeSlice, GiPartyFlags, GiBread } from 'react-icons/gi';
 import { IoSparkles, IoTimeOutline, IoCheckmarkCircle } from 'react-icons/io5';
 import { MdLocalShipping, MdDesignServices } from 'react-icons/md';
 import { BiCustomize } from 'react-icons/bi';
-import celebrationCake from '../assets/images/products/cake-celebrationcake.jpg';
-import birthdayCake from '../assets/images/products/cake-birthdaycake.jpg';
+import celebrationCake from '../assets/images/celebrationcake.jpg';
+import birthdayCake from '../assets/images/cake-girlbirthday.jpg';
 import cakeSlice from '../assets/images/products/cake-cakeslice.jpg';
 import expressCake from '../assets/images/products/cake-expresscake.jpg';
 import puffPuff from '../assets/images/products/fried-puffpuff.jpg';
-import meatPie from '../assets/images/products/fried-meatpie.jpeg';
+import meatPie from '../assets/images/fried-meatpie.jpg';
 import puffPuffBox from '../assets/images/products/fried-puffpuffbox.jpg';
-import springRolls from '../assets/images/products/fried-puffpuffmix.jpg';
+import puffpuffmix from '../assets/images/products/fried-puffpuffmix.jpg';
 import bananaBread from '../assets/images/products/baked-bananabread.jpg';
 import strawberryCakeSlice from '../assets/images/products/cake-strawberrybiscoffcakeslice.jpg';
+import cupcakes from '../assets/images/baked-cupcakes.jpg';
+import cakebirthday from '../assets/images/cake-birthday.jpg';
+import premiumbirthdaycake from '../assets/images/cake-twostep.jpg';
+import cakebirthday2 from '../assets/images/cake-birthday2.jpg';
+import smallchops from '../assets/images/fried-smallchops.jpg';
+import friedminismallchopsplatter from '../assets/images/fried-minismallchopsplatter.jpg';
+import friedcarrotbanana from '../assets/images/fried-carrotbanana.jpg';
+import friedvegetablespringroll from '../assets/images/fried-vegetablespringroll.jpg';
+import filleddoughnuts from '../assets/images/fried-filleddoughnut.jpg';
+import cakebirthday3 from '../assets/images/cake-girlbirthday2.jpg';
 
 const Menu = () => {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -38,7 +48,6 @@ const Menu = () => {
         description: "Custom-designed celebration cakes for weddings, birthdays, anniversaries and special events. Each cake is a masterpiece crafted to match your theme and taste preferences.",
         features: ["Custom Design", "Multiple Tiers", "Fresh Ingredients", "Serves 30-80+"],
         priceRange: "From £250",
-        dietary: ["Vegan Option", "Gluten-Free Option"],
         image: celebrationCake
       },
       {
@@ -48,8 +57,16 @@ const Menu = () => {
         description: "Personalized birthday cakes that bring joy to your special day. From simple elegance to elaborate themed creations with authentic Nigerian flavors.",
         features: ["Theme Customization", "Age Display", "Photo Printing Available", "Serves 15-40"],
         priceRange: "From £80",
-        dietary: ["Dairy-Free Option"],
         image: birthdayCake
+      },
+      {
+        id: 2,
+        name: "Birthday Cake",
+        category: "cakes",
+        description: "Personalized birthday cakes that bring joy to your special day. From simple elegance to elaborate themed creations with authentic Nigerian flavors.",
+        features: ["Theme Customization", "Age Display", "Photo Printing Available", "Serves 15-40"],
+        priceRange: "From £85",
+        image: cakebirthday2
       },
       {
         id: 3,
@@ -58,30 +75,54 @@ const Menu = () => {
         description: "Individual cake slices perfect for a quick treat or everyday indulgence. Available in multiple flavors including chocolate, vanilla, and red velvet.",
         features: ["Multiple Flavors", "Perfect Single Serving", "Fresh Daily", "Ready to Eat"],
         priceRange: "£10 per slice",
-        dietary: ["Various Options"],
         image: cakeSlice
       },
       {
         id: 4,
-        name: "Express Cake",
+        name: "Birthday Cake",
         category: "cakes",
         description: "Quick turnaround cakes for last-minute celebrations. Simple yet elegant designs with authentic taste.",
         features: ["24-48hr Turnaround", "Simple Designs", "Premium Quality", "Serves 8-15"],
-        priceRange: "From £45",
-        dietary: ["Nut-Free Option"],
-        image: expressCake
+        priceRange: "From £65",
+        image: cakebirthday3
+      },
+      {
+        id: 5,
+        name: "Cupcakes",
+        category: "cakes",
+        description: "Quick turnaround cakes for last-minute celebrations. Simple yet elegant designs with authentic taste.",
+        features: ["24-48hr Turnaround", "Simple Designs", "Premium Quality", "Serves 8-15"],
+        priceRange: "From £30",
+        image: cupcakes
+      },
+      {
+        id: 5,
+        name: "Birthday Cake",
+        category: "cakes",
+        description: "Quick turnaround cakes for last-minute celebrations. Simple yet elegant designs with authentic taste.",
+        features: ["24-48hr Turnaround", "Simple Designs", "Premium Quality", "Serves 8-15"],
+        priceRange: "From £50",
+        image: cakebirthday
+      },
+      {
+        id: 5,
+        name: "Premium Birthday Cake",
+        category: "cakes",
+        description: "Quick turnaround cakes for last-minute celebrations. Simple yet elegant designs with authentic taste.",
+        features: ["24-48hr Turnaround", "Simple Designs", "Premium Quality", "Serves 8-15"],
+        priceRange: "From £250",
+        image: premiumbirthdaycake
       }
     ],
     fingerFoods: [
       {
         id: 5,
-        name: "Puff Puff",
+        name: "Puff Puff Mix",
         category: "finger-foods",
         description: "Authentic Nigerian puff puff - sweet, fluffy, and irresistible. Freshly made daily using traditional recipes passed down through generations.",
         features: ["Freshly Made Daily", "Traditional Recipe", "Party Favorite", "Various Pack Sizes"],
         priceRange: "From £5 per pack",
-        servingSize: "Individual or party packs available",
-        image: puffPuff
+        image: puffpuffmix
       },
       {
         id: 6,
@@ -90,7 +131,6 @@ const Menu = () => {
         description: "Flaky pastry filled with savory seasoned beef and vegetables. A nostalgic taste of home that's perfect for any occasion.",
         features: ["Flaky Crust", "Savory Beef Filling", "Perfectly Spiced", "Individual or Bulk"],
         priceRange: "£3.50 each",
-        servingSize: "Individual portions",
         image: meatPie
       },
       {
@@ -100,28 +140,25 @@ const Menu = () => {
         description: "Assorted Nigerian finger foods bursting with spices. Perfect party platter with a variety of authentic treats professionally arranged.",
         features: ["Variety Selection", "Professionally Arranged", "Customizable Mix", "Serves 10-15"],
         priceRange: "£80 per platter",
-        servingSize: "Serves 10-15 guests",
         image: puffPuffBox
       },
       {
         id: 8,
-        name: "Spring Rolls",
+        name: "Small Chops",
         category: "finger-foods",
         description: "Crispy spring rolls with Nigerian-spiced fillings. A fusion favorite that combines authentic African flavors with contemporary presentation.",
         features: ["Crispy & Golden", "Perfectly Spiced", "Party Size Available", "Vegetarian Option"],
-        priceRange: "£2.50 each",
-        servingSize: "Minimum 10 pieces",
-        image: springRolls
+        priceRange: "£8",
+        image: smallchops
       },
       {
         id: 9,
-        name: "Samosa",
+        name: "Mini Small Chops Platter",
         category: "finger-foods",
         description: "Premium samosas filled with spiced meat or vegetables. Golden, crispy, and perfectly seasoned for your events.",
         features: ["Beef or Veggie Options", "Perfectly Spiced", "Golden & Crispy", "Bulk Orders Available"],
-        priceRange: "£2.50 each",
-        servingSize: "Minimum 10 pieces",
-        image: meatPie
+        priceRange: "£30",
+        image: friedminismallchopsplatter
       }
     ],
     pastries: [
@@ -132,7 +169,6 @@ const Menu = () => {
         description: "Moist, flavorful banana bread baked fresh daily. Perfect for breakfast or as a sweet snack with tea or coffee.",
         features: ["Freshly Baked Daily", "Moist & Flavorful", "Premium Ingredients", "Slice or Loaf"],
         priceRange: "From £8",
-        dietary: ["Dairy-Free Option"],
         image: bananaBread
       },
       {
@@ -142,7 +178,6 @@ const Menu = () => {
         description: "Indulgent cake slice combining fresh strawberries with Biscoff spread. A modern twist on traditional cake.",
         features: ["Fresh Strawberries", "Biscoff Flavor", "Individual Serving", "Fresh Daily"],
         priceRange: "£12 per slice",
-        dietary: ["Vegetarian"],
         image: strawberryCakeSlice
       },
       {
@@ -152,7 +187,6 @@ const Menu = () => {
         description: "Bite-sized cupcakes in various flavors with buttercream frosting. Perfect for events and celebrations.",
         features: ["Multiple Flavors", "Beautiful Decoration", "Individual Portions", "Minimum 24 pieces"],
         priceRange: "From £25 per dozen",
-        dietary: ["Vegan Available"],
         image: cakeSlice
       },
       {
@@ -162,18 +196,34 @@ const Menu = () => {
         description: "Soft, fluffy Nigerian-style bread buns. Perfect for breakfast or as a sweet snack.",
         features: ["Freshly Baked Daily", "Soft & Fluffy", "Traditional Recipe", "Pack of 6"],
         priceRange: "From £6 per pack",
-        dietary: ["Dairy-Free Option"],
         image: bananaBread
       },
       {
         id: 14,
-        name: "Pastries Mix",
+        name: "Carrot Banana Bread",
         category: "pastries",
         description: "Assorted pastries and treats. A delightful mix of our freshly baked specialties.",
         features: ["Variety Pack", "Fresh Daily", "Perfect for Sharing", "Minimum 6 pieces"],
-        priceRange: "From £20",
-        dietary: ["Various Options"],
-        image: puffPuffBox
+        priceRange: "",
+        image: friedcarrotbanana
+      },
+      {
+        id: 14,
+        name: "Vegetable Spring Rolls",
+        category: "pastries",
+        description: "Assorted pastries and treats. A delightful mix of our freshly baked specialties.",
+        features: ["Variety Pack", "Fresh Daily", "Perfect for Sharing", "Minimum 6 pieces"],
+        priceRange: "From £9.99",
+        image: friedvegetablespringroll
+      },
+      {
+        id: 14,
+        name: "Filled Doughnuts",
+        category: "pastries",
+        description: "Assorted pastries and treats. A delightful mix of our freshly baked specialties.",
+        features: ["Variety Pack", "Fresh Daily", "Perfect for Sharing", "Minimum 6 pieces"],
+        priceRange: "From £10",
+        image: filleddoughnuts
       }
     ]
   };
@@ -218,10 +268,6 @@ const Menu = () => {
               <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full border border-white/20">
                 <IoCheckmarkCircle className="text-[#E1BF5E] text-2xl" />
                 <span className="font-semibold">Fresh Ingredients</span>
-              </div>
-              <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full border border-white/20">
-                <IoCheckmarkCircle className="text-[#E1BF5E] text-2xl" />
-                <span className="font-semibold">Dietary Options</span>
               </div>
             </div>
           </motion.div>
@@ -303,36 +349,6 @@ const Menu = () => {
                         </span>
                       ))}
                     </div>
-
-                    {/* Dietary Info */}
-                    {item.dietary && (
-                      <div className="flex flex-wrap gap-2 mb-4">
-                        {item.dietary.map((diet, idx) => (
-                          <span 
-                            key={idx}
-                            className="inline-flex items-center gap-1 text-xs bg-green-100 text-green-700 px-3 py-1 rounded-full font-semibold"
-                          >
-                            <FaLeaf className="text-green-600" />
-                            {diet}
-                          </span>
-                        ))}
-                      </div>
-                    )}
-
-                    {/* Serving Size (for finger foods) */}
-                    {item.servingSize && (
-                      <p className="text-sm text-gray-500 mb-4">
-                        <strong>Serving:</strong> {item.servingSize}
-                      </p>
-                    )}
-
-                    {/* Order Button */}
-                    <NavLink
-                      to="/order"
-                      className="block w-full text-center bg-gradient-to-r from-[#1F1D63] to-[#16143f] text-white py-3 rounded-full font-semibold hover:from-[#16143f] hover:to-[#1F1D63] transition-all duration-300"
-                    >
-                      Order Now
-                    </NavLink>
                   </div>
                 </motion.div>
               ))}
@@ -386,22 +402,6 @@ const Menu = () => {
               <h3 className="text-xl font-bold text-[#1F1D63] mb-2">Flavor Customization</h3>
               <p className="text-gray-600">
                 Choose from our extensive flavor library or create your own
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="bg-gradient-to-br from-[#f8f9fa] to-white p-6 rounded-2xl border-2 border-[#E1BF5E]/20 hover:border-[#E1BF5E] transition-all duration-300"
-            >
-              <div className="w-14 h-14 bg-[#E1BF5E] rounded-xl flex items-center justify-center mb-4">
-                <FaLeaf className="text-3xl text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-[#1F1D63] mb-2">Dietary Accommodations</h3>
-              <p className="text-gray-600">
-                Vegan, gluten-free, nut-free, and allergy-friendly options
               </p>
             </motion.div>
 
@@ -515,25 +515,6 @@ const Menu = () => {
                     <p className="text-sm text-gray-600">Puff puff, meat pies, spring rolls</p>
                   </div>
                   <span className="text-[#E1BF5E] font-bold">From £2.50</span>
-                </div>
-              </div>
-              
-              {/* Dietary Options */}
-              <div className="mt-6 p-4 bg-[#f8f9fa] rounded-xl">
-                <p className="text-sm font-semibold text-[#1F1D63] mb-2">Dietary Options Available:</p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700 border border-gray-200">
-                    <FaLeaf className="inline mr-1 text-green-600" />Vegan
-                  </span>
-                  <span className="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700 border border-gray-200">
-                    Gluten-Free
-                  </span>
-                  <span className="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700 border border-gray-200">
-                    Dairy-Free
-                  </span>
-                  <span className="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700 border border-gray-200">
-                    Nut-Free
-                  </span>
                 </div>
               </div>
             </motion.div>
@@ -771,14 +752,16 @@ const Menu = () => {
               <p className="text-xl text-white/80 mb-10">
                 Let's create something amazing together. Get in touch for a personalized quote or place your order today.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                <NavLink 
-                  to="/order"
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                <a 
+                  href="https://wa.link/fcqc2g"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 bg-[#E1BF5E] text-[#1F1D63] px-10 py-4 rounded-full text-lg font-bold hover:bg-[#d4a838] transition-all duration-300 hover:-translate-y-1 shadow-lg"
                 >
                   <FaHeart />
                   Get a Quote
-                </NavLink>
+                </a>
                 <NavLink 
                   to="/gallery"
                   className="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-white/20 transition-all duration-300"
@@ -793,7 +776,7 @@ const Menu = () => {
           {/* Contact Options */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <motion.a
-              href="tel:+447123456789"
+              href="tel:+447477839439"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -805,12 +788,12 @@ const Menu = () => {
               </div>
               <div>
                 <p className="text-sm text-white/70 mb-1">Call Us</p>
-                <p className="font-bold text-lg">+44 712 345 6789</p>
+                <p className="font-bold text-lg">+44 7477 839439</p>
               </div>
             </motion.a>
 
             <motion.a
-              href="mailto:hello@dmodishcakes.com"
+              href="mailto:info@dmodish.co.uk"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -822,7 +805,7 @@ const Menu = () => {
               </div>
               <div>
                 <p className="text-sm text-white/70 mb-1">Email Us</p>
-                <p className="font-bold text-lg">hello@dmodishcakes.com</p>
+                <p className="font-bold text-lg">info@dmodish.co.uk</p>
               </div>
             </motion.a>
 

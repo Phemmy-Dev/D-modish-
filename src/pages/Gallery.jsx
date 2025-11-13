@@ -5,17 +5,34 @@ import { FaHeart, FaStar, FaTimes, FaChevronLeft, FaChevronRight, FaInstagram, F
 import { GiCakeSlice, GiCupcake, GiBread, GiPartyFlags } from 'react-icons/gi';
 import { IoSparkles, IoClose } from 'react-icons/io5';
 import { MdEmail } from 'react-icons/md';
-import celebrationCake from '../assets/images/products/cake-celebrationcake.jpg';
-import celebrationCake2 from '../assets/images/products/cake-celebrationcake2.jpg';
-import birthdayCake from '../assets/images/products/cake-birthdaycake.jpg';
-import cakeSlice from '../assets/images/products/cake-cakeslice.jpg';
-import strawberryCakeSlice from '../assets/images/products/cake-strawberrybiscoffcakeslice.jpg';
-import expressCake from '../assets/images/products/cake-expresscake.jpg';
-import puffPuff from '../assets/images/products/fried-puffpuff.jpg';
-import puffPuffBox from '../assets/images/products/fried-puffpuffbox.jpg';
-import puffPuffMix from '../assets/images/products/fried-puffpuffmix.jpg';
-import meatPie from '../assets/images/products/fried-meatpie.jpeg';
-import bananaBread from '../assets/images/products/baked-bananabread.jpg';
+import celebrationCake from '../assets/images/celebrationcake.jpg';
+import birthdayCake from '../assets/images/cake-girlbirthday.jpg';
+import birthdayCake2 from '../assets/images/cake-birthday.jpg';
+import birthdayCake3 from '../assets/images/cake-birthday2.jpg';
+import birthdayCake4 from '../assets/images/cake-birthday3.jpg';
+import birthdayCake5 from '../assets/images/cake-birthday5.jpg';
+import cakeSlice from '../assets/images/cake-cakeslice.jpg';
+import cakeSlice2 from '../assets/images/cake-cakeslice2.jpg';
+import expressCake from '../assets/images/cake-expresscake.jpg';
+import cupcakes from '../assets/images/baked-cupcakes.jpg';
+import cupcakes2 from '../assets/images/cake-cupcake2.jpg';
+import twoStepCake from '../assets/images/cake-twostep.jpg';
+import puffPuffMix from '../assets/images/fried-puffpuffmix.jpg';
+import meatPie from '../assets/images/fried-meatpie.jpg';
+import meatPie2 from '../assets/images/fried-meatpie2.jpg';
+import smallChops from '../assets/images/fried-smallchops.jpg';
+import smallChopsPlatter from '../assets/images/cake-smallchopplatter.jpg';
+import miniSmallChops from '../assets/images/fried-minismallchopsplatter.jpg';
+import sausageRoll from '../assets/images/fried-sausageroll.jpg';
+import fishRoll from '../assets/images/fried-fishroll.jpg';
+import springRoll from '../assets/images/fried-springroll.jpg';
+import vegSpringRoll from '../assets/images/fried-vegetablespringroll.jpg';
+import bananaBread from '../assets/images/baked-bananabread.jpg';
+import coconutBread from '../assets/images/coconutbread.jpg';
+import carrotBanana from '../assets/images/fried-carrotbanana.jpg';
+import filledDoughnut from '../assets/images/fried-filleddoughnut.jpg';
+import event1 from '../assets/images/event1.jpg';
+import event2 from '../assets/images/event2.jpg';
 
 const Gallery = () => {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -38,7 +55,7 @@ const Gallery = () => {
     {
       id: 1,
       category: 'wedding',
-      image: celebrationCake2,
+      image: celebrationCake,
       title: 'Elegant Wedding Celebration Cake',
       occasion: 'Wedding Reception',
       description: 'Multi-tier celebration cake with elegant design and premium finishing',
@@ -46,24 +63,60 @@ const Gallery = () => {
     },
     {
       id: 2,
+      category: 'wedding',
+      image: twoStepCake,
+      title: 'Premium Two-Tier Wedding Cake',
+      occasion: 'Wedding Celebration',
+      description: 'Elegant two-tier wedding cake with sophisticated design',
+      features: 'Multi-tier, Premium decoration, Custom design'
+    },
+    {
+      id: 3,
       category: 'birthday',
       image: birthdayCake,
-      title: 'Birthday Celebration Cake',
+      title: 'Girl Birthday Celebration Cake',
       occasion: 'Birthday Party',
       description: 'Custom birthday cake with vibrant colors and personalized design',
       features: 'Theme customization, Fresh ingredients, Custom topper'
     },
     {
-      id: 3,
-      category: 'celebration',
-      image: celebrationCake,
-      title: 'Premium Celebration Cake',
-      occasion: 'Special Celebration',
-      description: 'Beautifully crafted celebration cake for any special occasion',
-      features: 'Premium finish, Multiple tiers, Custom design'
+      id: 4,
+      category: 'birthday',
+      image: birthdayCake2,
+      title: 'Classic Birthday Cake',
+      occasion: 'Birthday Party',
+      description: 'Traditional birthday cake perfect for any celebration',
+      features: 'Classic design, Fresh ingredients, Customizable'
     },
     {
-      id: 4,
+      id: 5,
+      category: 'birthday',
+      image: birthdayCake3,
+      title: 'Themed Birthday Cake',
+      occasion: 'Birthday Celebration',
+      description: 'Beautifully themed birthday cake with custom decorations',
+      features: 'Custom theme, Colorful design, Age display'
+    },
+    {
+      id: 6,
+      category: 'birthday',
+      image: birthdayCake4,
+      title: 'Special Birthday Creation',
+      occasion: 'Birthday Party',
+      description: 'Unique birthday cake design for memorable celebrations',
+      features: 'Unique design, Premium quality, Custom message'
+    },
+    {
+      id: 7,
+      category: 'birthday',
+      image: birthdayCake5,
+      title: 'Designer Birthday Cake',
+      occasion: 'Birthday Event',
+      description: 'Designer birthday cake with elegant finishing touches',
+      features: 'Designer finish, Premium ingredients, Custom decoration'
+    },
+    {
+      id: 8,
       category: 'celebration',
       image: expressCake,
       title: 'Express Celebration Cake',
@@ -72,16 +125,43 @@ const Gallery = () => {
       features: 'Fast delivery, Simple elegance, Premium taste'
     },
     {
-      id: 5,
-      category: 'finger-foods',
-      image: puffPuffBox,
-      title: 'Premium Small Chops Platter',
-      occasion: 'Party Event',
-      description: 'Assorted Nigerian finger foods beautifully arranged in a box',
-      features: 'Puff puff, Spring rolls, Variety pack'
+      id: 9,
+      category: 'celebration',
+      image: cupcakes,
+      title: 'Celebration Cupcakes',
+      occasion: 'Special Event',
+      description: 'Beautifully decorated cupcakes perfect for any celebration',
+      features: 'Multiple flavors, Beautiful decoration, Individual portions'
     },
     {
-      id: 6,
+      id: 10,
+      category: 'celebration',
+      image: cupcakes2,
+      title: 'Premium Cupcake Selection',
+      occasion: 'Party Treat',
+      description: 'Premium cupcakes with elegant frosting and decorations',
+      features: 'Gourmet flavors, Premium frosting, Party-ready'
+    },
+    {
+      id: 11,
+      category: 'pastries',
+      image: cakeSlice,
+      title: 'Premium Cake Slice',
+      occasion: 'Everyday Treat',
+      description: 'Perfect single-serving cake slice for personal indulgence',
+      features: 'Multiple flavors, Fresh daily, Ready to eat'
+    },
+    {
+      id: 12,
+      category: 'pastries',
+      image: cakeSlice2,
+      title: 'Gourmet Cake Slice',
+      occasion: 'Sweet Treat',
+      description: 'Gourmet cake slice with rich flavors and beautiful presentation',
+      features: 'Rich flavor, Fresh daily, Individual portion'
+    },
+    {
+      id: 13,
       category: 'pastries',
       image: bananaBread,
       title: 'Artisan Banana Bread',
@@ -90,52 +170,70 @@ const Gallery = () => {
       features: 'Fresh daily, Premium ingredients, Traditional recipe'
     },
     {
-      id: 7,
-      category: 'birthday',
-      image: cakeSlice,
-      title: 'Individual Cake Slice',
-      occasion: 'Everyday Treat',
-      description: 'Perfect single-serving cake slice for personal indulgence',
-      features: 'Multiple flavors, Fresh daily, Ready to eat'
-    },
-    {
-      id: 8,
-      category: 'celebration',
-      image: strawberryCakeSlice,
-      title: 'Strawberry Biscoff Slice',
-      occasion: 'Special Treat',
-      description: 'Indulgent cake slice with fresh strawberries and Biscoff',
-      features: 'Fresh strawberries, Biscoff flavor, Premium quality'
-    },
-    {
-      id: 9,
-      category: 'events',
-      image: puffPuffMix,
-      title: 'Party Finger Foods Mix',
-      occasion: 'Event Setup',
-      description: 'Assorted Nigerian finger foods perfectly arranged for events',
-      features: 'Variety selection, Party-ready, Professional presentation'
-    },
-    {
-      id: 10,
-      category: 'wedding',
-      image: celebrationCake2,
-      title: 'Luxury Wedding Cake',
-      occasion: 'Wedding Celebration',
-      description: 'Elegant multi-tier wedding cake with premium finish',
-      features: 'Multi-tier, Premium decoration, Custom design'
-    },
-    {
-      id: 11,
+      id: 14,
       category: 'pastries',
-      image: bananaBread,
-      title: 'Fresh Baked Goods',
+      image: coconutBread,
+      title: 'Coconut Bread',
       occasion: 'Daily Fresh',
-      description: 'Freshly baked pastries and bread made daily',
-      features: 'Fresh daily, Traditional recipes, Premium ingredients'
+      description: 'Traditional coconut bread with authentic Nigerian flavors',
+      features: 'Fresh coconut, Traditional recipe, Moist texture'
     },
     {
-      id: 12,
+      id: 15,
+      category: 'pastries',
+      image: carrotBanana,
+      title: 'Carrot Banana Loaf',
+      occasion: 'Healthy Treat',
+      description: 'Nutritious blend of carrot and banana in soft bread',
+      features: 'Healthy option, Natural sweetness, Fresh baked'
+    },
+    {
+      id: 16,
+      category: 'pastries',
+      image: filledDoughnut,
+      title: 'Filled Doughnuts',
+      occasion: 'Sweet Snack',
+      description: 'Soft doughnuts with delicious cream filling',
+      features: 'Cream filled, Fresh made, Sweet treat'
+    },
+    {
+      id: 17,
+      category: 'finger-foods',
+      image: smallChopsPlatter,
+      title: 'Small Chops Platter',
+      occasion: 'Party Catering',
+      description: 'Elegant platter of assorted Nigerian finger foods',
+      features: 'Variety selection, Professionally arranged, Party-ready'
+    },
+    {
+      id: 18,
+      category: 'finger-foods',
+      image: smallChops,
+      title: 'Assorted Small Chops',
+      occasion: 'Party Event',
+      description: 'Mix of traditional Nigerian finger foods perfect for events',
+      features: 'Mixed variety, Authentic flavors, Event portions'
+    },
+    {
+      id: 19,
+      category: 'finger-foods',
+      image: miniSmallChops,
+      title: 'Mini Small Chops Platter',
+      occasion: 'Party Snack',
+      description: 'Bite-sized portions of assorted finger foods',
+      features: 'Mini portions, Variety pack, Party favorite'
+    },
+    {
+      id: 20,
+      category: 'finger-foods',
+      image: puffPuffMix,
+      title: 'Puff Puff Platter Mix',
+      occasion: 'Party Snack',
+      description: 'Assorted puff puff varieties arranged on decorative platter',
+      features: 'Mixed varieties, Fresh made, Party portions'
+    },
+    {
+      id: 21,
       category: 'finger-foods',
       image: meatPie,
       title: 'Nigerian Meat Pies',
@@ -144,31 +242,67 @@ const Gallery = () => {
       features: 'Flaky crust, Savory filling, Perfectly spiced'
     },
     {
-      id: 13,
-      category: 'celebration',
-      image: expressCake,
-      title: 'Quick Celebration Cake',
-      occasion: 'Last-minute Order',
-      description: 'Beautiful cake with quick turnaround time',
-      features: 'Fast service, Simple elegance, Premium taste'
-    },
-    {
-      id: 14,
-      category: 'birthday',
-      image: birthdayCake,
-      title: 'Custom Birthday Cake',
-      occasion: 'Birthday Celebration',
-      description: 'Personalized birthday cake with custom theme',
-      features: 'Custom theme, Age display, Fresh ingredients'
-    },
-    {
-      id: 15,
+      id: 22,
       category: 'finger-foods',
-      image: puffPuff,
-      title: 'Authentic Puff Puff',
-      occasion: 'Traditional Snack',
-      description: 'Sweet, fluffy Nigerian puff puff made fresh',
-      features: 'Traditional recipe, Freshly made, Party favorite'
+      image: meatPie2,
+      title: 'Premium Meat Pies',
+      occasion: 'Event Catering',
+      description: 'Premium meat pies with extra filling and flaky crust',
+      features: 'Extra filling, Premium pastry, Golden brown'
+    },
+    {
+      id: 23,
+      category: 'finger-foods',
+      image: sausageRoll,
+      title: 'Sausage Rolls',
+      occasion: 'Party Snack',
+      description: 'Crispy sausage rolls with seasoned meat filling',
+      features: 'Crispy pastry, Juicy filling, Party favorite'
+    },
+    {
+      id: 24,
+      category: 'finger-foods',
+      image: fishRoll,
+      title: 'Fish Rolls',
+      occasion: 'Party Catering',
+      description: 'Delicious fish rolls with flaky pastry and seasoned fish',
+      features: 'Flaky crust, Fresh fish, Perfectly seasoned'
+    },
+    {
+      id: 25,
+      category: 'finger-foods',
+      image: springRoll,
+      title: 'Spring Rolls',
+      occasion: 'Party Event',
+      description: 'Crispy spring rolls with savory vegetable and meat filling',
+      features: 'Crispy texture, Savory filling, Fresh made'
+    },
+    {
+      id: 26,
+      category: 'finger-foods',
+      image: vegSpringRoll,
+      title: 'Vegetable Spring Rolls',
+      occasion: 'Party Snack',
+      description: 'Crispy vegetable spring rolls perfect for vegetarian guests',
+      features: 'Vegetarian option, Fresh vegetables, Crispy coating'
+    },
+    {
+      id: 27,
+      category: 'events',
+      image: event2,
+      title: 'Event Catering Display',
+      occasion: 'Event Setup',
+      description: 'Professional catering setup with elegant presentation for special events',
+      features: 'Professional setup, Elegant display, Full-service catering'
+    },
+    {
+      id: 28,
+      category: 'events',
+      image: event1,
+      title: 'Party Food Station',
+      occasion: 'Event Setup',
+      description: 'Beautifully arranged party food station with assorted Nigerian treats',
+      features: 'Variety selection, Party-ready, Professional presentation'
     },
   ];
 
@@ -402,12 +536,6 @@ const Gallery = () => {
                         <p className="text-gray-600 text-sm">{filteredItems[currentImageIndex]?.features}</p>
                       </div>
                     </div>
-                    <NavLink
-                      to="/order"
-                      className="block w-full text-center bg-gradient-to-r from-[#1F1D63] to-[#16143f] text-white py-3 rounded-full font-semibold hover:from-[#16143f] hover:to-[#1F1D63] transition-all duration-300"
-                    >
-                      Order Similar
-                    </NavLink>
                   </div>
                 </div>
               </motion.div>
@@ -650,13 +778,15 @@ const Gallery = () => {
                 Ready to bring your vision to life? Contact us for a personalized consultation and let's design something extraordinary together.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                <NavLink 
-                  to="/order"
+                <a 
+                  href="https://wa.link/fcqc2g"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 bg-[#E1BF5E] text-[#1F1D63] px-10 py-4 rounded-full text-lg font-bold hover:bg-[#d4a838] transition-all duration-300 hover:-translate-y-1 shadow-lg"
                 >
                   <MdEmail />
                   Request Consultation
-                </NavLink>
+                </a>
                 <NavLink 
                   to="/menu"
                   className="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-white/20 transition-all duration-300"

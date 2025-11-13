@@ -869,13 +869,15 @@ const Hygiene = () => {
                 We're here to answer any questions you have about our hygiene practices, allergen information, or food safety protocols.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                <NavLink 
-                  to="/order"
+                <a 
+                  href="https://wa.link/fcqc2g"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 bg-[#1F1D63] text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-[#16143f] transition-all duration-300 hover:-translate-y-1 shadow-lg"
                 >
                   <FaPhoneAlt />
                   Contact Us
-                </NavLink>
+                </a>
                 <NavLink 
                   to="/menu"
                   className="inline-flex items-center justify-center gap-2 bg-white border-2 border-[#1F1D63] text-[#1F1D63] px-10 py-4 rounded-full text-lg font-bold hover:bg-[#f5f5f5] transition-all duration-300"
@@ -887,7 +889,7 @@ const Hygiene = () => {
               {/* Contact Info */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
                 <a
-                  href="tel:+447123456789"
+                  href="tel:+447477839439"
                   className="flex items-center gap-4 bg-[#f5f5f5] p-6 rounded-2xl hover:bg-gray-200 transition-all duration-300"
                 >
                   <div className="w-14 h-14 bg-[#E1BF5E] rounded-full flex items-center justify-center flex-shrink-0">
@@ -895,12 +897,12 @@ const Hygiene = () => {
                   </div>
                   <div className="text-left">
                     <p className="text-sm text-gray-600 mb-1">Call Us Directly</p>
-                    <p className="font-bold text-[#1F1D63] text-lg">+44 712 345 6789</p>
+                    <p className="font-bold text-[#1F1D63] text-lg">+44 7477 839439</p>
                   </div>
                 </a>
 
                 <a
-                  href="mailto:hello@dmodishcakes.com"
+                  href="mailto:info@dmodish.co.uk"
                   className="flex items-center gap-4 bg-[#f5f5f5] p-6 rounded-2xl hover:bg-gray-200 transition-all duration-300"
                 >
                   <div className="w-14 h-14 bg-[#E1BF5E] rounded-full flex items-center justify-center flex-shrink-0">
@@ -908,7 +910,7 @@ const Hygiene = () => {
                   </div>
                   <div className="text-left">
                     <p className="text-sm text-gray-600 mb-1">Email Us</p>
-                    <p className="font-bold text-[#1F1D63] text-lg">hello@dmodishcakes.com</p>
+                    <p className="font-bold text-[#1F1D63] text-lg">info@dmodish.co.uk</p>
                   </div>
                 </a>
               </div>

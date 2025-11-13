@@ -5,7 +5,7 @@ import { FaLeaf, FaTruck, FaAward, FaShieldAlt, FaCheckCircle, FaCertificate } f
 import { GiCakeSlice, GiChefToque, GiPartyFlags } from 'react-icons/gi';
 import { IoSparkles, IoGlobe } from 'react-icons/io5';
 import { MdVerified, MdDinnerDining, MdLocalShipping } from 'react-icons/md';
-import heroImg from '../assets/images/heroimg.jpg';
+import heroImg from '../assets/images/heroimg2.jpg';
 import celebrationCake from '../assets/images/products/cake-celebrationcake.jpg';
 import celebrationCake2 from '../assets/images/products/cake-childrenbirthdaycake.jpg';
 import birthdayCake from '../assets/images/products/cake-birthdaycake.jpg';
@@ -16,7 +16,9 @@ import meatPie from '../assets/images/products/fried-meatpie.jpeg';
 import bananaBread from '../assets/images/products/baked-bananabread.jpg';
 import puffPuffBox from '../assets/images/products/fried-puffpuffbox.jpg';
 import expressCake from '../assets/images/products/cake-expresscake.jpg';
-import puffPuffMix from '../assets/images/products/fried-puffpuffmix.jpg';
+import puffPuffMix from '../assets/images/fried-puffpuffmix.jpg';
+import bakedcupcakes from '../assets/images/baked-cupcakes.jpg'
+import friedfilleddoughnut from '../assets/images/fried-filleddoughnut.jpg'
 
 const Homepage = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -92,15 +94,15 @@ const Homepage = () => {
         className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden bg-cover bg-center bg-fixed" 
         style={{ backgroundImage: `url(${heroImg})` }}
       >
-        <div className="absolute inset-0 bg-black/50 z-[1]"></div>
+        <div className="absolute inset-0 bg-black/75 z-[1]"></div>
         <div className="relative z-[2] text-center px-6">
           <div className="max-w-3xl mx-auto animate-[fadeInUp_1s_ease-out]">
             <h1 className="font-['Playfair_Display'] text-5xl md:text-6xl lg:text-7xl leading-tight font-bold text-white mb-5 [text-shadow:2px_4px_8px_rgba(0,0,0,0.3)]">
               Your Daily Dose of Delicious
             </h1>
-            <p className="text-lg md:text-xl leading-relaxed text-white/95 mb-10 font-normal">
+            {/* <p className="text-lg md:text-xl leading-relaxed text-white/95 mb-10 font-normal">
               Authentic Nigerian flavours meet modern baking excellence • From £10 cake slices to £250 celebration cakes
-            </p>
+            </p> */}
             <NavLink 
               to="/menu" 
               className="inline-block bg-white text-[#1F1D63] font-semibold py-3.5 px-12 rounded transition-all duration-300 shadow-[0_4px_15px_rgba(0,0,0,0.2)] hover:-translate-y-1 hover:shadow-[0_6px_20px_rgba(0,0,0,0.3)] hover:bg-[#E1BF5E]"
@@ -119,7 +121,7 @@ const Homepage = () => {
             <div className="animate-[fadeInLeft_1s_ease-out]">
               <div className="w-full h-[400px] lg:h-[500px] rounded-lg overflow-hidden shadow-xl">
                 <img 
-                  src={puffPuffBox} 
+                  src={bakedcupcakes} 
                   alt="Fresh Puff Puff Box"
                   className="w-full h-full object-cover"
                 />
@@ -241,8 +243,8 @@ const Homepage = () => {
             <div className="animate-[fadeInLeft_1s_ease-out]">
               <div className="w-full h-[400px] rounded-lg overflow-hidden shadow-xl">
                 <img 
-                  src={expressCake} 
-                  alt="Express Cake"
+                  src={friedfilleddoughnut} 
+                  alt="Fried Filled Doughnut"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -608,7 +610,7 @@ const Homepage = () => {
                     <span className="text-white text-lg font-bold">2</span>
                   </div>
                 </div>
-                <h3 className="text-2xl font-bold text-[#1F1D63] mb-4">Place Order</h3>
+                <a href="https://wa.link/fcqc2g" target="_blank" rel="noopener noreferrer" className="text-2xl font-bold text-[#1F1D63] mb-4 hover:text-[#E1BF5E] transition-colors duration-300">Place Order</a>
                 <p className="text-gray-600 leading-relaxed">
                   Order online through our website or give us a call for custom requests
                 </p>
