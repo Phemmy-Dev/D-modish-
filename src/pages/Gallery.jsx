@@ -36,6 +36,8 @@ import event2 from '../assets/images/event2.jpg';
 import event3 from '../assets/images/event3.jpg';
 import event4 from '../assets/images/event4.jpg';
 import event5 from '../assets/images/event5.jpg';
+import event6 from '../assets/images/event6.jpg';
+import event7 from '../assets/images/event7.jpg';
 import smallchopspack from '../assets/images/gallery/smallchopspack.jpg';
 import cakejar from '../assets/images/cake-cakejar.jpg';
 
@@ -346,9 +348,17 @@ const Gallery = () => {
       features: 'Variety selection, Party-ready, Professional presentation'
     },
     {
-      id: 31,
+      id: 32,
       category: 'events',
-      image: event5,
+      image: event6,
+      title: 'Party Food Station',
+      occasion: 'Event Setup',
+      description: 'Beautifully arranged party food station with assorted Nigerian treats',
+      features: 'Variety selection, Party-ready, Professional presentation'
+    },{
+      id: 33,
+      category: 'events',
+      image: event7,
       title: 'Party Food Station',
       occasion: 'Event Setup',
       description: 'Beautifully arranged party food station with assorted Nigerian treats',
@@ -864,14 +874,6 @@ const Gallery = () => {
                     className="w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
                   >
                     <FaFacebook className="text-xl" />
-                  </a>
-                  <a 
-                    href="https://twitter.com" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
-                  >
-                    <FaTwitter className="text-xl" />
                   </a>
                 </div>
               </div>
