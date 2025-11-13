@@ -298,11 +298,12 @@ const Hygiene = () => {
               transition={{ duration: 0.6 }}
             >
               <div className="relative">
-                <div className="aspect-square bg-gradient-to-br from-[#E1BF5E]/10 to-[#1F1D63]/5 rounded-3xl flex items-center justify-center border-2 border-dashed border-[#1F1D63]/20">
-                  <div className="text-center text-[#1F1D63] opacity-40">
-                    <FaHandsWash className="text-6xl mx-auto mb-4" />
-                    <p className="text-lg font-medium">Food Handling Excellence</p>
-                  </div>
+                <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl">
+                  <img 
+                    src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&q=80" 
+                    alt="Fresh Baked Goods and Pastries Display"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[#E1BF5E] rounded-full opacity-20 blur-3xl"></div>
                 <div className="absolute -top-6 -left-6 w-32 h-32 bg-[#1F1D63] rounded-full opacity-20 blur-3xl"></div>

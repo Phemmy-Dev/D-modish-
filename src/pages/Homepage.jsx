@@ -434,15 +434,15 @@ const Homepage = () => {
                 ))}
               </div>
               <p className="text-gray-700 italic mb-6 leading-relaxed">
-                "The best Nigerian cakes in the UK! The taste takes me back home. D'modish Cakes never disappoints!"
+                "The cake was so delicious, it finished before my eyes.I had to run and take some away for my family. Highly recommend D'modish!"
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#E1BF5E] to-[#d4a838] flex items-center justify-center text-white font-bold text-lg">
-                  A
+                  D
                 </div>
                 <div>
-                  <h4 className="font-semibold text-[#1F1D63]">Adaeze Okonkwo</h4>
-                  <p className="text-sm text-gray-500">London, UK</p>
+                  <h4 className="font-semibold text-[#1F1D63]">Doctor Adanna</h4>
+                
                 </div>
               </div>
             </div>
@@ -457,15 +457,14 @@ const Homepage = () => {
                 ))}
               </div>
               <p className="text-gray-700 italic mb-6 leading-relaxed">
-                "Ordered a custom cake for my daughter's birthday. It was absolutely stunning and delicious!"
+                "Everyone who tasted the cake loved it was so yummy. Even someone i gave the cake last night said it was really nice and who ever made it did a good job. God will continue to bless the works of your hands!!"
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#E1BF5E] to-[#d4a838] flex items-center justify-center text-white font-bold text-lg">
                   M
                 </div>
                 <div>
-                  <h4 className="font-semibold text-[#1F1D63]">Michael Johnson</h4>
-                  <p className="text-sm text-gray-500">Manchester, UK</p>
+                  <h4 className="font-semibold text-[#1F1D63]">Temi</h4>
                 </div>
               </div>
             </div>
@@ -480,15 +479,14 @@ const Homepage = () => {
                 ))}
               </div>
               <p className="text-gray-700 italic mb-6 leading-relaxed">
-                "Fresh, authentic, and absolutely delicious. The snack packs are my weekly treat!"
+                "Stumbled on your yummy pastry and drinks at a naming ceremony in sunderland today..It was so yummy as usual.Everything was on point .The chapman,the smallchops ,the Meatpie and springroll was excellent.we had to take chapman for the road."
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#E1BF5E] to-[#d4a838] flex items-center justify-center text-white font-bold text-lg">
-                  C
+                  A
                 </div>
                 <div>
-                  <h4 className="font-semibold text-[#1F1D63]">Chioma Nwankwo</h4>
-                  <p className="text-sm text-gray-500">Birmingham, UK</p>
+                  <h4 className="font-semibold text-[#1F1D63]">Anu</h4>
                 </div>
               </div>
             </div>
@@ -610,7 +608,7 @@ const Homepage = () => {
                     <span className="text-white text-lg font-bold">2</span>
                   </div>
                 </div>
-                <a href="https://wa.link/fcqc2g" target="_blank" rel="noopener noreferrer" className="text-2xl font-bold text-[#1F1D63] mb-4 hover:text-[#E1BF5E] transition-colors duration-300">Place Order</a>
+                <h3 className="text-2xl font-bold text-[#1F1D63] mb-4">Place Order</h3>
                 <p className="text-gray-600 leading-relaxed">
                   Order online through our website or give us a call for custom requests
                 </p>

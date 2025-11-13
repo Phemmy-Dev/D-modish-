@@ -26,6 +26,8 @@ import friedcarrotbanana from '../assets/images/fried-carrotbanana.jpg';
 import friedvegetablespringroll from '../assets/images/fried-vegetablespringroll.jpg';
 import filleddoughnuts from '../assets/images/fried-filleddoughnut.jpg';
 import cakebirthday3 from '../assets/images/cake-girlbirthday2.jpg';
+import cupcake2 from '../assets/images/cake-cupcake2.jpg';
+import cakejar from '../assets/images/cake-cakejar.jpg';
 
 const Menu = () => {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -47,7 +49,7 @@ const Menu = () => {
         category: "cakes",
         description: "Custom-designed celebration cakes for weddings, birthdays, anniversaries and special events. Each cake is a masterpiece crafted to match your theme and taste preferences.",
         features: ["Custom Design", "Multiple Tiers", "Fresh Ingredients", "Serves 30-80+"],
-        priceRange: "From £250",
+        priceRange: "From £180",
         image: celebrationCake
       },
       {
@@ -56,7 +58,7 @@ const Menu = () => {
         category: "cakes",
         description: "Personalized birthday cakes that bring joy to your special day. From simple elegance to elaborate themed creations with authentic Nigerian flavors.",
         features: ["Theme Customization", "Age Display", "Photo Printing Available", "Serves 15-40"],
-        priceRange: "From £80",
+        priceRange: "From £150",
         image: birthdayCake
       },
       {
@@ -83,7 +85,7 @@ const Menu = () => {
         category: "cakes",
         description: "Quick turnaround cakes for last-minute celebrations. Simple yet elegant designs with authentic taste.",
         features: ["24-48hr Turnaround", "Simple Designs", "Premium Quality", "Serves 8-15"],
-        priceRange: "From £65",
+        priceRange: "£65",
         image: cakebirthday3
       },
       {
@@ -92,8 +94,8 @@ const Menu = () => {
         category: "cakes",
         description: "Quick turnaround cakes for last-minute celebrations. Simple yet elegant designs with authentic taste.",
         features: ["24-48hr Turnaround", "Simple Designs", "Premium Quality", "Serves 8-15"],
-        priceRange: "From £30",
-        image: cupcakes
+        priceRange: "From £35 per dozen",
+        image: cupcake2
       },
       {
         id: 5,
@@ -101,11 +103,20 @@ const Menu = () => {
         category: "cakes",
         description: "Quick turnaround cakes for last-minute celebrations. Simple yet elegant designs with authentic taste.",
         features: ["24-48hr Turnaround", "Simple Designs", "Premium Quality", "Serves 8-15"],
-        priceRange: "From £50",
+        priceRange: "£50",
         image: cakebirthday
       },
       {
         id: 5,
+        name: "Premium Birthday Cake",
+        category: "cakes",
+        description: "Quick turnaround cakes for last-minute celebrations. Simple yet elegant designs with authentic taste.",
+        features: ["24-48hr Turnaround", "Simple Designs", "Premium Quality", "Serves 8-15"],
+        priceRange: "From £250",
+        image: premiumbirthdaycake
+      },
+      {
+        id: 6,
         name: "Premium Birthday Cake",
         category: "cakes",
         description: "Quick turnaround cakes for last-minute celebrations. Simple yet elegant designs with authentic taste.",
@@ -121,7 +132,7 @@ const Menu = () => {
         category: "finger-foods",
         description: "Authentic Nigerian puff puff - sweet, fluffy, and irresistible. Freshly made daily using traditional recipes passed down through generations.",
         features: ["Freshly Made Daily", "Traditional Recipe", "Party Favorite", "Various Pack Sizes"],
-        priceRange: "From £5 per pack",
+        priceRange: "£5 per pack",
         image: puffpuffmix
       },
       {
@@ -139,7 +150,7 @@ const Menu = () => {
         category: "finger-foods",
         description: "Assorted Nigerian finger foods bursting with spices. Perfect party platter with a variety of authentic treats professionally arranged.",
         features: ["Variety Selection", "Professionally Arranged", "Customizable Mix", "Serves 10-15"],
-        priceRange: "£80 per platter",
+        priceRange: "£30 per platter",
         image: puffPuffBox
       },
       {
@@ -177,7 +188,7 @@ const Menu = () => {
         category: "pastries",
         description: "Indulgent cake slice combining fresh strawberries with Biscoff spread. A modern twist on traditional cake.",
         features: ["Fresh Strawberries", "Biscoff Flavor", "Individual Serving", "Fresh Daily"],
-        priceRange: "£12 per slice",
+        priceRange: "£10 per slice",
         image: strawberryCakeSlice
       },
       {
@@ -199,7 +210,7 @@ const Menu = () => {
         image: bananaBread
       },
       {
-        id: 14,
+        id: 15,
         name: "Carrot Banana Bread",
         category: "pastries",
         description: "Assorted pastries and treats. A delightful mix of our freshly baked specialties.",
@@ -208,16 +219,16 @@ const Menu = () => {
         image: friedcarrotbanana
       },
       {
-        id: 14,
+        id: 16,
         name: "Vegetable Spring Rolls",
         category: "pastries",
         description: "Assorted pastries and treats. A delightful mix of our freshly baked specialties.",
         features: ["Variety Pack", "Fresh Daily", "Perfect for Sharing", "Minimum 6 pieces"],
-        priceRange: "From £9.99",
+        priceRange: "£9.99",
         image: friedvegetablespringroll
       },
       {
-        id: 14,
+        id: 17,
         name: "Filled Doughnuts",
         category: "pastries",
         description: "Assorted pastries and treats. A delightful mix of our freshly baked specialties.",

@@ -33,6 +33,11 @@ import carrotBanana from '../assets/images/fried-carrotbanana.jpg';
 import filledDoughnut from '../assets/images/fried-filleddoughnut.jpg';
 import event1 from '../assets/images/event1.jpg';
 import event2 from '../assets/images/event2.jpg';
+import event3 from '../assets/images/event3.jpg';
+import event4 from '../assets/images/event4.jpg';
+import event5 from '../assets/images/event5.jpg';
+import smallchopspack from '../assets/images/gallery/smallchopspack.jpg';
+import cakejar from '../assets/images/cake-cakejar.jpg';
 
 const Gallery = () => {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -57,6 +62,15 @@ const Gallery = () => {
       category: 'wedding',
       image: celebrationCake,
       title: 'Elegant Wedding Celebration Cake',
+      occasion: 'Wedding Reception',
+      description: 'Multi-tier celebration cake with elegant design and premium finishing',
+      features: 'Custom design, Premium ingredients, Fresh decoration'
+    },
+    {
+      id: 20,
+      category: 'wedding',
+      image: cakejar,
+      title: 'Cake Jar',
       occasion: 'Wedding Reception',
       description: 'Multi-tier celebration cake with elegant design and premium finishing',
       features: 'Custom design, Premium ingredients, Fresh decoration'
@@ -215,6 +229,15 @@ const Gallery = () => {
       features: 'Mixed variety, Authentic flavors, Event portions'
     },
     {
+      id: 25,
+      category: 'finger-foods',
+      image: smallchopspack,
+      title: 'Assorted Small Chops',
+      occasion: 'Party Event',
+      description: 'Mix of traditional Nigerian finger foods perfect for events',
+      features: 'Mixed variety, Authentic flavors, Event portions'
+    },
+    {
       id: 19,
       category: 'finger-foods',
       image: miniSmallChops,
@@ -299,6 +322,33 @@ const Gallery = () => {
       id: 28,
       category: 'events',
       image: event1,
+      title: 'Party Food Station',
+      occasion: 'Event Setup',
+      description: 'Beautifully arranged party food station with assorted Nigerian treats',
+      features: 'Variety selection, Party-ready, Professional presentation'
+    },
+    {
+      id: 29,
+      category: 'events',
+      image: event3,
+      title: 'Party Food Station',
+      occasion: 'Event Setup',
+      description: 'Beautifully arranged party food station with assorted Nigerian treats',
+      features: 'Variety selection, Party-ready, Professional presentation'
+    },
+    {
+      id: 30,
+      category: 'events',
+      image: event4,
+      title: 'Party Food Station',
+      occasion: 'Event Setup',
+      description: 'Beautifully arranged party food station with assorted Nigerian treats',
+      features: 'Variety selection, Party-ready, Professional presentation'
+    },
+    {
+      id: 31,
+      category: 'events',
+      image: event5,
       title: 'Party Food Station',
       occasion: 'Event Setup',
       description: 'Beautifully arranged party food station with assorted Nigerian treats',
@@ -800,7 +850,7 @@ const Gallery = () => {
                 <p className="text-white/60 mb-4 text-sm">Follow us for more inspiration</p>
                 <div className="flex gap-4 justify-center">
                   <a 
-                    href="https://instagram.com" 
+                    href="https://www.instagram.com/dmodish_fingerfoodsnbakes?igsh=MzJ3a2psZmEyYnd2" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -808,7 +858,7 @@ const Gallery = () => {
                     <FaInstagram className="text-xl" />
                   </a>
                   <a 
-                    href="https://facebook.com" 
+                    href="https://www.facebook.com/share/1H3euc7C8a/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -844,13 +894,13 @@ const Gallery = () => {
               Stay updated with our newest creations, behind-the-scenes moments, and customer celebrations
             </p>
             <a 
-              href="https://instagram.com" 
+              href="https://www.instagram.com/dmodish_fingerfoodsnbakes?igsh=MzJ3a2psZmEyYnd2" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-500 text-white px-8 py-4 rounded-full font-bold hover:shadow-lg transition-all duration-300 hover:scale-105"
             >
               <FaInstagram className="text-xl" />
-              Follow @dmodishcakes
+              Follow @dmodish_fingerfoodsnbakes
             </a>
           </div>
 

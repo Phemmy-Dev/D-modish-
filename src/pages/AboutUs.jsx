@@ -10,7 +10,7 @@ import puffPuffBox from '../assets/images/cake-twostep.jpg';
 
 const AboutUs = () => {
   return (
-    <div className="pt-24">
+    <div className="pt-24 overflow-x-hidden">
       {/* Hero Section */}
       <section 
         className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden bg-cover bg-center" 
@@ -23,13 +23,13 @@ const AboutUs = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="font-['Playfair_Display'] text-5xl md:text-6xl lg:text-7xl leading-tight font-bold text-white mb-6">
+            <h1 className="font-['Playfair_Display'] text-4xl md:text-5xl lg:text-7xl leading-tight font-bold text-white mb-6">
               Our Story
             </h1>
-            <p className="text-xl md:text-2xl text-[#E1BF5E] font-semibold mb-4 italic">
+            <p className="text-lg md:text-xl lg:text-2xl text-[#E1BF5E] font-semibold mb-4 italic">
               "Taste. Style. Celebration!"
             </p>
-            <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto">
+            <p className="text-base md:text-lg lg:text-xl text-white/90 max-w-2xl mx-auto">
               Where Nigerian heritage meets modern baking excellence
             </p>
           </motion.div>
@@ -50,23 +50,23 @@ const AboutUs = () => {
               <span className="inline-block text-xs font-bold tracking-[2px] text-[#E1BF5E] uppercase mb-4">
                 About D'modish
               </span>
-              <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-[#1F1D63] mb-6">
+              <h2 className="font-['Playfair_Display'] text-3xl md:text-4xl lg:text-5xl font-bold text-[#1F1D63] mb-6 break-words">
                 A Modern Afro-Fusion Culinary Brand
               </h2>
-              <p className="text-gray-600 leading-relaxed mb-4">
+              <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-4 break-words">
                 <strong>D'modish FingerFoods and Bakes Ltd</strong> is not just another food business — it is a modern 
                 <strong> Afro-Fusion culinary and lifestyle brand</strong> that blends authentic African flavours with 
                 contemporary British tastes, digital convenience, and community impact. Our model brings together 
                 <strong> culinary creativity, technology, and wellbeing</strong>, offering customers a complete ecosystem 
                 of flavour, health, and celebration.
               </p>
-              <p className="text-gray-600 leading-relaxed mb-4">
+              <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-4 break-words">
                 Our journey began as a small venture inspired by family recipes from Nigeria, evolving into a beloved 
                 brand that serves fresh, handcrafted goods daily. Whether it's a young professional grabbing a quick 
                 bite, a family ordering weekly healthy snacks, or a company hosting a catered event, <strong>D'Modish</strong> delivers 
                 food experiences that are fresh, flavourful, and meaningful.
               </p>
-              <p className="text-gray-600 leading-relaxed mb-6">
+              <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-6 break-words">
                 By positioning ourselves at the intersection of <strong>culture, convenience, and innovation</strong>, we are 
                 redefining how the UK experiences finger foods — turning every order into a story of celebration, style, 
                 and connection.
@@ -131,12 +131,12 @@ const AboutUs = () => {
             <div className="absolute top-0 right-0 w-64 h-64 bg-[#E1BF5E]/10 rounded-full blur-3xl"></div>
             <div className="relative z-10">
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 bg-[#E1BF5E] rounded-2xl flex items-center justify-center">
-                  <FaTrophy className="text-3xl text-[#1F1D63]" />
+                <div className="w-12 h-12 md:w-16 md:h-16 bg-[#E1BF5E] rounded-2xl flex items-center justify-center flex-shrink-0">
+                  <FaTrophy className="text-2xl md:text-3xl text-[#1F1D63]" />
                 </div>
-                <h3 className="text-3xl font-bold">Our Mission</h3>
+                <h3 className="text-2xl md:text-3xl font-bold break-words">Our Mission</h3>
               </div>
-              <p className="text-lg md:text-xl leading-relaxed text-white/90">
+              <p className="text-base md:text-lg lg:text-xl leading-relaxed text-white/90 break-words">
                 Our mission is to become the <strong>leading Afro-Fusion finger food brand in the UK</strong>, providing 
                 customers with delicious, wholesome, and culturally rich options that celebrate both tradition and modernity. 
                 We are dedicated to redefining the perception of Nigerian cuisine by delivering <strong>premium-quality pastries, 
@@ -342,8 +342,8 @@ const AboutUs = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-[#E1BF5E] to-[#d4a838] rounded-2xl flex items-center justify-center mb-6 mx-auto">
                 <span className="text-3xl text-white font-bold">1</span>
               </div>
-              <h3 className="text-2xl font-bold text-[#1F1D63] mb-4 text-center">Walk-In & Takeaway Service</h3>
-              <p className="text-gray-600 leading-relaxed text-center">
+              <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-[#1F1D63] mb-4 text-center break-words">Walk-In & Takeaway Service</h3>
+              <p className="text-sm md:text-base text-gray-600 leading-relaxed text-center break-words">
                 Freshly prepared Afro-Fusion snacks, small chops, and pastries available daily for walk-in customers and quick pick-ups. Every product reflects our "Finger-Lickin Taste to Celebrate with Style," combining freshness, speed, and satisfaction.
               </p>
             </motion.div>
@@ -359,8 +359,8 @@ const AboutUs = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-[#E1BF5E] to-[#d4a838] rounded-2xl flex items-center justify-center mb-6 mx-auto">
                 <span className="text-3xl text-white font-bold">2</span>
               </div>
-              <h3 className="text-2xl font-bold text-[#1F1D63] mb-4 text-center">Open Catering & Corporate Events</h3>
-              <p className="text-gray-600 leading-relaxed text-center">
+              <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-[#1F1D63] mb-4 text-center break-words">Open Catering & Corporate Events</h3>
+              <p className="text-sm md:text-base text-gray-600 leading-relaxed text-center break-words">
                 Tailored catering packages for weddings, corporate functions, school events, and private celebrations. D'Modish provides themed menus, dessert tables, and curated finger-food platters that blend presentation with cultural flair.
               </p>
             </motion.div>
@@ -376,8 +376,8 @@ const AboutUs = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-[#E1BF5E] to-[#d4a838] rounded-2xl flex items-center justify-center mb-6 mx-auto">
                 <span className="text-3xl text-white font-bold">3</span>
               </div>
-              <h3 className="text-2xl font-bold text-[#1F1D63] mb-4 text-center">WeightSmart FingerFoods Programme</h3>
-              <p className="text-gray-600 leading-relaxed text-center">
+              <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-[#1F1D63] mb-4 text-center break-words">WeightSmart FingerFoods Programme</h3>
+              <p className="text-sm md:text-base text-gray-600 leading-relaxed text-center break-words">
                 A subscription-based healthy-eating initiative allowing clients to select meals aligned with personal goals — weight loss, maintenance, or strength gain. Our AI-assisted recipe planner and portion-control system ensure balanced nutrition without compromising flavour.
               </p>
             </motion.div>
@@ -393,8 +393,8 @@ const AboutUs = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-[#E1BF5E] to-[#d4a838] rounded-2xl flex items-center justify-center mb-6 mx-auto">
                 <span className="text-3xl text-white font-bold">4</span>
               </div>
-              <h3 className="text-2xl font-bold text-[#1F1D63] mb-4 text-center">Programmed Birthday Scheduler</h3>
-              <p className="text-gray-600 leading-relaxed text-center">
+              <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-[#1F1D63] mb-4 text-center break-words">Programmed Birthday Scheduler</h3>
+              <p className="text-sm md:text-base text-gray-600 leading-relaxed text-center break-words">
                 A unique automation service that enables customers to pre-schedule birthday cakes, party boxes, and food trays for loved ones. The system sends a 5-day reminder before preparation, ensuring gifts arrive on time — making celebration effortless.
               </p>
             </motion.div>
@@ -410,8 +410,8 @@ const AboutUs = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-[#E1BF5E] to-[#d4a838] rounded-2xl flex items-center justify-center mb-6 mx-auto">
                 <span className="text-3xl text-white font-bold">5</span>
               </div>
-              <h3 className="text-2xl font-bold text-[#1F1D63] mb-4 text-center">Retail & Partner Supply Line</h3>
-              <p className="text-gray-600 leading-relaxed text-center">
+              <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-[#1F1D63] mb-4 text-center break-words">Retail & Partner Supply Line</h3>
+              <p className="text-sm md:text-base text-gray-600 leading-relaxed text-center break-words">
                 Supplying branded D'Modish snacks, pastries, and sauces to cafés, event vendors, and retail outlets across the UK, extending brand presence beyond our flagship outlets.
               </p>
             </motion.div>
@@ -427,8 +427,8 @@ const AboutUs = () => {
               <div className="w-16 h-16 bg-gradient-to-br from-[#E1BF5E] to-[#d4a838] rounded-2xl flex items-center justify-center mb-6 mx-auto">
                 <span className="text-3xl text-white font-bold">6</span>
               </div>
-              <h3 className="text-2xl font-bold text-[#1F1D63] mb-4 text-center">D'Modish Culinary Network & Academy</h3>
-              <p className="text-gray-600 leading-relaxed text-center">
+              <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-[#1F1D63] mb-4 text-center break-words">D'Modish Culinary Network & Academy</h3>
+              <p className="text-sm md:text-base text-gray-600 leading-relaxed text-center break-words">
                 An in-house talent-development programme that trains and certifies young bakers and cooks in Afro-Fusion cuisine, empowering women, youth, and new migrants with hands-on culinary skills and entrepreneurship mentoring.
               </p>
             </motion.div>
