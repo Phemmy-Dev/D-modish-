@@ -94,7 +94,7 @@ const Homepage = () => {
         className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden bg-cover bg-center bg-fixed" 
         style={{ backgroundImage: `url(${heroImg})` }}
       >
-        <div className="absolute inset-0 bg-black/75 z-[1]"></div>
+        <div className="absolute inset-0 bg-black/40 z-[1]"></div>
         <div className="relative z-[2] text-center px-6">
           <div className="max-w-3xl mx-auto animate-[fadeInUp_1s_ease-out]">
             <h1 className="font-['Playfair_Display'] text-5xl md:text-6xl lg:text-7xl leading-tight font-bold text-white mb-5 [text-shadow:2px_4px_8px_rgba(0,0,0,0.3)]">
