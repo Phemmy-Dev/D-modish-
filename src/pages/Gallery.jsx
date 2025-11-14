@@ -40,6 +40,8 @@ import event6 from '../assets/images/event6.jpg';
 import event7 from '../assets/images/event7.jpg';
 import smallchopspack from '../assets/images/gallery/smallchopspack.jpg';
 import cakejar from '../assets/images/cake-cakejar.jpg';
+import weddingcake from '../assets/images/weddingcake.jpg'
+import buscuitcake from '../assets/images/buscuitcake.jpg'
 
 const Gallery = () => {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -605,7 +607,7 @@ const Gallery = () => {
       </AnimatePresence>
 
       {/* Featured Projects Section */}
-      <section className="bg-white py-20">
+      {/* <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-8 md:px-16 lg:px-20 xl:px-24">
           <div className="text-center mb-16">
             <span className="inline-block text-xs font-bold tracking-[2px] text-[#E1BF5E] uppercase mb-4">
@@ -620,7 +622,6 @@ const Gallery = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Featured Project 1 */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -660,7 +661,6 @@ const Gallery = () => {
               </div>
             </motion.div>
 
-            {/* Featured Project 2 */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -701,9 +701,8 @@ const Gallery = () => {
             </motion.div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      {/* Customer Testimonials (Visual) */}
       <section className="bg-[#f5f5f5] py-20">
         <div className="max-w-7xl mx-auto px-8 md:px-16 lg:px-20 xl:px-24">
           <div className="text-center mb-16">
@@ -721,17 +720,17 @@ const Gallery = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                image: 'https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=800&q=80',
+                image: weddingcake,
                 name: 'Sarah & James',
                 event: 'Wedding - June 2024',
                 review: "D'modish created our dream wedding cake! It was not only stunning but tasted absolutely divine. All our guests are still talking about it!",
                 rating: 5
               },
               {
-                image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800&q=80',
+                image: buscuitcake,
                 name: 'Chioma Obi',
                 event: 'Birthday Party - August 2024',
-                review: "The attention to detail was incredible. They brought my vision to life perfectly. The chocolate cake was a showstopper!",
+                review: "The attention to detail was incredible. They brought my vision to life perfectly.",
                 rating: 5
               },
               {
@@ -778,7 +777,7 @@ const Gallery = () => {
       </section>
 
       {/* Behind the Scenes */}
-      <section className="bg-white py-20">
+      {/* <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-8 md:px-16 lg:px-20 xl:px-24">
           <div className="text-center mb-16">
             <span className="inline-block text-xs font-bold tracking-[2px] text-[#E1BF5E] uppercase mb-4">
@@ -819,7 +818,7 @@ const Gallery = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Call to Action */}
       <section className="bg-gradient-to-br from-[#1F1D63] to-[#16143f] text-white py-20">
